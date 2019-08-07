@@ -63,7 +63,8 @@ html, body {
   padding: 0; }
 
 html {
-  position: relative; }
+  position: relative;
+  background-color: #05143a; }
 
 body {
   font-family: "Noto Sans TC", "Source Sans Pro", "Microsoft JhengHei", "微軟正黑體", sans-serif;
@@ -71,7 +72,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: normal;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto; }
 
 body.fixed {
   height: 100%;
@@ -456,7 +459,7 @@ button {
     right: 0;
     top: 21%;
     width: 5%;
-    max-width: 89px;
+    max-width: 81px;
     z-index: 2; }
     .kvSection .kv .kv-cta .cta-btn {
       display: block;
@@ -481,7 +484,7 @@ button {
     display: none; }
 
 .kvSection .kv-form {
-  background: url("../images/kvbg-pc_w.jpg") no-repeat top center #0a2153;
+  background: url("../images/kvbg-pc_w.jpg") no-repeat top center;
   background-size: 100%;
   margin: 0 auto;
   padding: 0 2.5rem 100px;
@@ -503,53 +506,33 @@ button {
     margin: 0 0 40px; }
     .kvSection .kv-form .kv-gift .kv-giftbox {
       position: relative;
-      width: 48%;
       background: rgba(255, 255, 255, 0.1);
-      padding: 30px 30px 20px;
-      font-family: "微軟正黑體";
-      font-family: "微軟正黑體"\0;
+      padding: 30px 15px;
+      font-family: '微軟正黑體';
+      font-family: '微軟正黑體' \0;
       font-size: 28px;
       color: #fff; }
       .kvSection .kv-form .kv-gift .kv-giftbox .giftbox_title {
-        text-align: center;
-        font-size: 30px;
-        color: #d6c5ff;
-        margin: 0 0 25px; }
+        font-size: 28px;
+        line-height: 28px; }
         .kvSection .kv-form .kv-gift .kv-giftbox .giftbox_title span {
-          font-weight: bold; }
-      .kvSection .kv-form .kv-gift .kv-giftbox .giftbox_line {
-        text-align: left;
-        margin: 28px 0 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
-        .kvSection .kv-form .kv-gift .kv-giftbox .giftbox_line .label span {
           color: #d6c5ff;
           font-weight: bold;
           border: 1px solid #d6c5ff;
-          padding: 2px 5px; }
-        .kvSection .kv-form .kv-gift .kv-giftbox .giftbox_line .cont .note {
-          display: block;
-          font-size: 15px;
-          margin: 5px 0 0; }
-    .kvSection .kv-form .kv-gift .kv-giftbox_01 {
-      width: 41.3%; }
-      .kvSection .kv-form .kv-gift .kv-giftbox_01 .giftbox_line .label {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 75px;
-        flex: 0 0 75px; }
-    .kvSection .kv-form .kv-gift .kv-giftbox_02 {
-      width: 55.4%;
-      position: relative; }
-      .kvSection .kv-form .kv-gift .kv-giftbox_02 .giftbox_line .label {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 50px;
-        flex: 0 0 50px; }
-      .kvSection .kv-form .kv-gift .kv-giftbox_02 .gift_dyson {
-        position: absolute;
-        right: -40px;
-        bottom: -25px;
-        width: 27.5%; }
+          padding: 2px 5px;
+          margin: 0 2px; }
+  .kvSection .kv-form .kv-giftbox_01 {
+    width: 54.5%;
+    text-align: center; }
+  .kvSection .kv-form .kv-giftbox_02 {
+    width: 43.2%;
+    position: relative;
+    text-align: left; }
+    .kvSection .kv-form .kv-giftbox_02 .gift_philia {
+      position: absolute;
+      right: -25px;
+      bottom: -20px;
+      width: 32%; }
 
 @media screen and (max-width: 1600px) {
   .kvSection .kv .kv-pc_w {
@@ -616,8 +599,8 @@ button {
       .kvSection .kv-form .kv-gift .kv-giftbox {
         width: 100%;
         max-width: 400px;
-        font-family: "微軟正黑體";
-        font-family: "微軟正黑體"\0;
+        font-family: '微軟正黑體';
+        font-family: '微軟正黑體' \0;
         font-size: 18px;
         padding: 15px;
         margin: 0 auto 20px; }
@@ -644,7 +627,7 @@ button {
   -ms-flex-pack: justify;
   justify-content: space-between;
   font-size: 18px;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   color: #fff;
   margin: 0 0 25px; }
   .kv-formbox .form-content .needsWrap {
@@ -668,7 +651,7 @@ button {
       color: #666;
       width: 100%;
       font-size: 18px;
-      letter-spacing: .05em;
+      letter-spacing: 0.05em;
       line-height: 40px;
       padding: 0 10px; }
       .kv-formbox .form-content .form-column input::-webkit-input-placeholder {
@@ -695,7 +678,7 @@ button {
       color: #666;
       width: 100%;
       font-size: 18px;
-      letter-spacing: .05em;
+      letter-spacing: 0.05em;
       line-height: 40px;
       padding: 0 10px; }
       .kv-formbox .form-content .form-column select::-webkit-input-placeholder {
@@ -710,9 +693,10 @@ button {
         border-bottom: 1px solid #d6c5ff; }
       .kv-formbox .form-content .form-column select:focus {
         border-bottom: 1px solid #d6c5ff; }
-    .kv-formbox .form-content .form-column select, .kv-formbox .form-content .form-column input {
-      font-family: "KozGoPro", "Noto Sans TC", "Source Sans Pro", "Microsoft JhengHei", "微軟正黑體", sans-serif;
-      font-family: "微軟正黑體"\0; }
+    .kv-formbox .form-content .form-column select,
+    .kv-formbox .form-content .form-column input {
+      font-family: 'KozGoPro', 'Noto Sans TC', 'Source Sans Pro', 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+      font-family: '微軟正黑體' \0; }
   .kv-formbox .form-content .privacyWrap {
     width: 100%; }
     .kv-formbox .form-content .privacyWrap a {
@@ -739,7 +723,7 @@ button {
     max-width: 274px;
     font-size: 24px;
     font-weight: bold;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
     position: relative;
     -webkit-transition: all 1s linear;
     -o-transition: all 1s linear;
@@ -754,12 +738,13 @@ button {
       transition: all 1s linear;
       opacity: 0.8; }
 
-.checkWrap [type="checkbox"]:not(:checked), .checkWrap [type="checkbox"]:checked {
+.checkWrap [type='checkbox']:not(:checked),
+.checkWrap [type='checkbox']:checked {
   position: absolute;
   left: -9999px;
   visibility: hidden; }
 
-.checkWrap [type="checkbox"] + label {
+.checkWrap [type='checkbox'] + label {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
@@ -767,7 +752,7 @@ button {
   height: 25px;
   line-height: 25px; }
 
-.checkWrap [type="checkbox"] + label:before {
+.checkWrap [type='checkbox'] + label:before {
   content: '';
   position: absolute;
   top: 0;
@@ -782,11 +767,11 @@ button {
   -o-transition: 0.2s;
   transition: 0.2s; }
 
-.checkWrap [type="checkbox"]:not(:checked):disabled + label:before {
+.checkWrap [type='checkbox']:not(:checked):disabled + label:before {
   border: none;
   background-color: rgba(0, 0, 0, 0.26); }
 
-.checkWrap [type="checkbox"]:checked + label:before {
+.checkWrap [type='checkbox']:checked + label:before {
   top: -4px;
   left: -3px;
   width: 12px;
@@ -802,23 +787,24 @@ button {
   -ms-transform-origin: 100% 100%;
   transform-origin: 100% 100%; }
 
-.checkWrap [type="checkbox"]:checked:disabled + label:before {
+.checkWrap [type='checkbox']:checked:disabled + label:before {
   border-right: 2px solid rgba(0, 0, 0, 0.26);
   border-bottom: 2px solid rgba(0, 0, 0, 0.26); }
 
-.checkWrap [type="checkbox"].filled-in + label:after {
+.checkWrap [type='checkbox'].filled-in + label:after {
   border-radius: 2px; }
 
-.checkWrap [type="checkbox"].filled-in + label:before, .checkWrap [type="checkbox"].filled-in + label:after {
+.checkWrap [type='checkbox'].filled-in + label:before,
+.checkWrap [type='checkbox'].filled-in + label:after {
   content: '';
   left: 0;
   position: absolute;
-  -webkit-transition: border .25s,background-color .25s,width .2s .1s,height .2s .1s,top .2s .1s,left .2s .1s;
-  -o-transition: border .25s,background-color .25s,width .2s .1s,height .2s .1s,top .2s .1s,left .2s .1s;
-  transition: border .25s,background-color .25s,width .2s .1s,height .2s .1s,top .2s .1s,left .2s .1s;
+  -webkit-transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s, height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
+  -o-transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s, height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
+  transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s, height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
   z-index: 1; }
 
-.checkWrap [type="checkbox"].filled-in:not(:checked) + label:before {
+.checkWrap [type='checkbox'].filled-in:not(:checked) + label:before {
   width: 0;
   height: 0;
   border: 3px solid transparent;
@@ -831,7 +817,7 @@ button {
   -ms-transform-origin: 100% 100%;
   transform-origin: 100% 100%; }
 
-.checkWrap [type="checkbox"].filled-in:not(:checked) + label:after {
+.checkWrap [type='checkbox'].filled-in:not(:checked) + label:after {
   width: 20px;
   height: 20px;
   background-color: transparent;
@@ -839,7 +825,7 @@ button {
   top: 0px;
   z-index: 0; }
 
-.checkWrap [type="checkbox"].filled-in:checked + label:before {
+.checkWrap [type='checkbox'].filled-in:checked + label:before {
   top: 2px;
   left: 2px;
   width: 8px;
@@ -855,27 +841,27 @@ button {
   -ms-transform-origin: 100% 100%;
   transform-origin: 100% 100%; }
 
-.checkWrap [type="checkbox"].filled-in:checked + label:after {
+.checkWrap [type='checkbox'].filled-in:checked + label:after {
   top: 0px;
   width: 20px;
   height: 20px;
   border: 1px solid #d6c5ff;
   z-index: 0; }
 
-.checkWrap [type="checkbox"].filled-in:disabled:not(:checked) + label:before {
+.checkWrap [type='checkbox'].filled-in:disabled:not(:checked) + label:before {
   background-color: transparent;
   border: 1px solid transparent; }
 
-.checkWrap [type="checkbox"].filled-in:disabled:not(:checked) + label:after {
+.checkWrap [type='checkbox'].filled-in:disabled:not(:checked) + label:after {
   border-color: transparent;
-  background-color: #BDBDBD; }
+  background-color: #bdbdbd; }
 
-.checkWrap [type="checkbox"].filled-in:disabled:checked + label:before {
+.checkWrap [type='checkbox'].filled-in:disabled:checked + label:before {
   background-color: transparent; }
 
-.checkWrap [type="checkbox"].filled-in:disabled:checked + label:after {
-  background-color: #BDBDBD;
-  border-color: #BDBDBD; }
+.checkWrap [type='checkbox'].filled-in:disabled:checked + label:after {
+  background-color: #bdbdbd;
+  border-color: #bdbdbd; }
 
 @media screen and (max-width: 1024px) {
   .kv-formbox .form-content {
@@ -903,8 +889,8 @@ button {
         line-height: 35px; }
     .kv-formbox .form-content .privacyWrap {
       font-size: 12px;
-      font-family: KozGoProLight, "微軟正黑體";
-      font-family: "微軟正黑體"\0; }
+      font-family: KozGoProLight, '微軟正黑體';
+      font-family: '微軟正黑體' \0; }
   .kv-formbox .form-btn .btn_send {
     padding: 12px 0;
     max-width: 180px;
@@ -915,17 +901,17 @@ button {
       left: 0;
       right: 0;
       bottom: -13px; }
-  .checkWrap [type="checkbox"] + label {
+  .checkWrap [type='checkbox'] + label {
     padding-left: 25px; }
-  .checkWrap [type="checkbox"].filled-in:not(:checked) + label:after {
+  .checkWrap [type='checkbox'].filled-in:not(:checked) + label:after {
     width: 15px;
     height: 15px;
     top: 3px; }
-  .checkWrap [type="checkbox"].filled-in:checked + label:after {
+  .checkWrap [type='checkbox'].filled-in:checked + label:after {
     top: 3px;
     width: 15px;
     height: 15px; }
-  .checkWrap [type="checkbox"].filled-in:checked + label:before {
+  .checkWrap [type='checkbox'].filled-in:checked + label:before {
     top: 5px;
     width: 6px;
     height: 9px; } }
@@ -934,7 +920,7 @@ button {
   background-color: #fff; }
 
 .modal-backdrop.in {
-  opacity: .9; }
+  opacity: 0.9; }
 
 .modal-content {
   background: none;
@@ -955,23 +941,24 @@ button {
     width: 33px;
     height: 33px;
     opacity: 1;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s; }
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
     .modal-body button.close span {
       opacity: 0; }
     .modal-body button.close:hover {
       opacity: 0.8;
-      -webkit-transition: all .3s;
-      -o-transition: all .3s;
-      transition: all .3s; }
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
 
 @media screen and (max-width: 640px) {
   .modal-dialog {
     margin: 50px auto; } }
 
 .starSection {
-  background: url("../images/starBg-pc_w.jpg") no-repeat bottom center #0d2062; }
+  background: url("../images/starBg-pc_w.jpg") no-repeat bottom center;
+  background-size: 100%; }
   .starSection .starWrap {
     max-width: 1024px;
     margin: 0 auto; }

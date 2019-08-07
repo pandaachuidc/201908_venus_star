@@ -4,9 +4,10 @@
         position: relative;
         .kv-cta {
             position: fixed;
-            right: 0; top: 21%;
+            right: 0;
+            top: 21%;
             width: 5%;
-            max-width: 89px;
+            max-width: 81px;
             z-index: 2;
             .cta-btn {
                 display: block;
@@ -18,7 +19,8 @@
         }
         .kvbottom {
             position: absolute;
-            left: 27.6%; top: 67.5%;
+            left: 27.6%;
+            top: 67.5%;
             width: 18%;
             max-width: 345px;
             a {
@@ -39,7 +41,7 @@
         }
     }
     .kv-form {
-        background: url("../images/kvbg-pc_w.jpg") no-repeat top center #0a2153;
+        background: url('../images/kvbg-pc_w.jpg') no-repeat top center;
         background-size: 100%;
         margin: 0 auto;
         padding: 0 2.5rem 100px;
@@ -57,69 +59,44 @@
             margin: 0 0 40px;
             .kv-giftbox {
                 position: relative;
-                width: 48%;
-                background: rgba(255,255,255,0.1);
-                padding: 30px 30px 20px;
-                font-family: "微軟正黑體";
-                font-family: "微軟正黑體"\0; //for ie
+                background: rgba(255, 255, 255, 0.1);
+                padding: 30px 15px;
+                font-family: '微軟正黑體';
+                font-family: '微軟正黑體' \0; //for ie
                 font-size: 28px;
                 color: #fff;
                 .giftbox_title {
-                    text-align: center;
-                    font-size: 30px;
-                    color: #d6c5ff;
-                    margin: 0 0 25px;
+                    font-size: 28px;
+                    line-height: 28px;
+
                     span {
+                        color: #d6c5ff;
                         font-weight: bold;
-                    }
-                }
-                .giftbox_line {
-                    text-align: left;
-                    margin: 28px 0 0;
-                    display: flex;
-                    .label {
-                        span {
-                            color: #d6c5ff;
-                            font-weight: bold;
-                            border: 1px solid #d6c5ff;
-                            padding: 2px 5px;
-                        }
-                    }
-                    .cont {
-                        .note {
-                            display: block;
-                            font-size: 15px;
-                            margin: 5px 0 0;
-                        }
+                        border: 1px solid #d6c5ff;
+                        padding: 2px 5px;
+                        margin: 0 2px;
                     }
                 }
             }
-            .kv-giftbox_01 {
-                width: 41.3%;
-                .giftbox_line {
-                    .label {
-                        flex: 0 0 75px;
-                    }
-                }
-            }
-            .kv-giftbox_02 {
-                width: 55.4%;
-                position: relative;
-                .giftbox_line {
-                    .label {
-                        flex: 0 0 50px;
-                    }
-                }
-                .gift_dyson {
-                    position: absolute;
-                    right: -40px;
-                    bottom: -25px;
-                    width: 27.5%;
-                }
+        }
+        .kv-giftbox_01 {
+            width: 54.5%;
+            text-align: center;
+        }
+        .kv-giftbox_02 {
+            width: 43.2%;
+            position: relative;
+            text-align: left;
+            .gift_philia {
+                position: absolute;
+                right: -25px;
+                bottom: -20px;
+                width: 32%;
             }
         }
     }
 }
+
 @media screen and (max-width: 1600px) {
     .kvSection {
         .kv {
@@ -131,7 +108,7 @@
             }
         }
         .kv-form {
-            background: url("../images/kvbg-pc.jpg") no-repeat top center #0a2153;
+            background: url('../images/kvbg-pc.jpg') no-repeat top center #0a2153;
             background-size: 100%;
         }
     }
@@ -199,7 +176,8 @@
         .kv {
             .kv-cta {
                 position: fixed;
-                right: 0; top: 16%;
+                right: 0;
+                top: 16%;
                 width: 16%;
                 max-width: 60px;
             }
@@ -217,7 +195,7 @@
             }
         }
         .kv-form {
-            background: url("../images/kvbg-mb.jpg") no-repeat top center #0a2153;
+            background: url('../images/kvbg-mb.jpg') no-repeat top center #0a2153;
             background-size: 100%;
             margin: 0 auto;
             padding: 0 1.2rem 50px;
@@ -231,8 +209,8 @@
                 .kv-giftbox {
                     width: 100%;
                     max-width: 400px;
-                    font-family: "微軟正黑體";
-                    font-family: "微軟正黑體"\0; //for ie
+                    font-family: '微軟正黑體';
+                    font-family: '微軟正黑體' \0; //for ie
                     font-size: 18px;
                     padding: 15px;
                     margin: 0 auto 20px;
@@ -258,23 +236,21 @@
 }
 // iphone XS Max, Plus
 @media screen and (max-width: 414px) {
-    
 }
 // iphone XS, iphone X
 @media screen and (max-width: 375px) {
-    
 }
 
 .kv-formbox {
     .form-content {
-        background: rgba(255,255,255,0.1);
+        background: rgba(255, 255, 255, 0.1);
         padding: 50px 60px 40px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         font-size: 18px;
-        letter-spacing: .05em;
-        color:#fff;
+        letter-spacing: 0.05em;
+        color: #fff;
         margin: 0 0 25px;
         .needsWrap {
             width: 100%;
@@ -292,50 +268,52 @@
                 appearance: none;
                 border: 0;
                 border-radius: 0;
-                border-bottom: 1px solid rgba(214,197,255,0.5);
+                border-bottom: 1px solid rgba(214, 197, 255, 0.5);
                 background: #fff;
                 color: #666;
                 width: 100%;
                 font-size: 18px;
-                letter-spacing: .05em;
+                letter-spacing: 0.05em;
                 line-height: 40px;
                 padding: 0 10px;
                 &::placeholder {
                     color: #666;
                 }
                 &:hover {
-                    border-bottom: 1px solid rgba(214,197,255,1);
+                    border-bottom: 1px solid rgba(214, 197, 255, 1);
                 }
                 &:focus {
-                    border-bottom: 1px solid rgba(214,197,255,1);
+                    border-bottom: 1px solid rgba(214, 197, 255, 1);
                 }
             }
             select {
                 appearance: none;
                 border: 0;
                 border-radius: 0;
-                border-bottom: 1px solid rgba(214,197,255,0.5);
-                background: url("../images/arrow.png") no-repeat right 15px center #fff;
+                border-bottom: 1px solid rgba(214, 197, 255, 0.5);
+                background: url('../images/arrow.png') no-repeat right 15px center #fff;
                 background-size: 10px;
                 color: #666;
                 width: 100%;
                 font-size: 18px;
-                letter-spacing: .05em;
+                letter-spacing: 0.05em;
                 line-height: 40px;
                 padding: 0 10px;
                 &::placeholder {
                     color: #666;
                 }
                 &:hover {
-                    border-bottom: 1px solid rgba(214,197,255,1);
+                    border-bottom: 1px solid rgba(214, 197, 255, 1);
                 }
                 &:focus {
-                    border-bottom: 1px solid rgba(214,197,255,1);
+                    border-bottom: 1px solid rgba(214, 197, 255, 1);
                 }
             }
-            select, input {
-                font-family: "KozGoPro", "Noto Sans TC", "Source Sans Pro", "Microsoft JhengHei", "微軟正黑體", sans-serif;
-                font-family: "微軟正黑體"\0; //for ie
+            select,
+            input {
+                font-family: 'KozGoPro', 'Noto Sans TC', 'Source Sans Pro', 'Microsoft JhengHei',
+                    '微軟正黑體', sans-serif;
+                font-family: '微軟正黑體' \0; //for ie
             }
         }
         .privacyWrap {
@@ -357,7 +335,7 @@
             appearance: none;
             border: 0;
             border-radius: 0;
-            background: url("../images/btn-bg.jpg") no-repeat center;
+            background: url('../images/btn-bg.jpg') no-repeat center;
             background-size: 100%;
             color: #0a153e;
             padding: 20px 0;
@@ -365,13 +343,13 @@
             max-width: 274px;
             font-size: 24px;
             font-weight: bold;
-            letter-spacing: .2em;
+            letter-spacing: 0.2em;
             position: relative;
             transition: all 1s linear;
             text-decoration: none;
             opacity: 1;
             &:hover {
-                background: url("../images/btn-bg.jpg") no-repeat center;
+                background: url('../images/btn-bg.jpg') no-repeat center;
                 background-size: 100%;
                 transition: all 1s linear;
                 opacity: 0.8;
@@ -380,12 +358,13 @@
     }
 }
 .checkWrap {
-    [type="checkbox"]:not(:checked),[type="checkbox"]:checked {
+    [type='checkbox']:not(:checked),
+    [type='checkbox']:checked {
         position: absolute;
         left: -9999px;
-        visibility: hidden
+        visibility: hidden;
     }
-    [type="checkbox"]+label {
+    [type='checkbox'] + label {
         position: relative;
         padding-left: 30px;
         cursor: pointer;
@@ -393,89 +372,101 @@
         height: 25px;
         line-height: 25px;
     }
-    [type="checkbox"]+label:before {
+    [type='checkbox'] + label:before {
         content: '';
         position: absolute;
-        top: 0; left: 0;
-        width: 18px; height: 18px;
+        top: 0;
+        left: 0;
+        width: 18px;
+        height: 18px;
         z-index: 0;
         border: 1px solid #d6c5ff;
         border-radius: 1px;
         margin-top: 1px;
-        transition: 0.2s
+        transition: 0.2s;
     }
-    [type="checkbox"]:not(:checked):disabled+label:before {
+    [type='checkbox']:not(:checked):disabled + label:before {
         border: none;
-        background-color: rgba(0,0,0,0.26)
+        background-color: rgba(0, 0, 0, 0.26);
     }
-    [type="checkbox"]:checked+label:before {
-        top: -4px; left: -3px;
-        width: 12px; height: 22px;
+    [type='checkbox']:checked + label:before {
+        top: -4px;
+        left: -3px;
+        width: 12px;
+        height: 22px;
         border-top: 2px solid transparent;
         border-left: 2px solid transparent;
         border-right: 2px solid #d6c5ff;
         border-bottom: 2px solid #d6c5ff;
         transform: rotate(40deg);
-        transform-origin: 100% 100%
+        transform-origin: 100% 100%;
     }
-    [type="checkbox"]:checked:disabled+label:before {
-        border-right: 2px solid rgba(0,0,0,0.26);
-        border-bottom: 2px solid rgba(0,0,0,0.26)
+    [type='checkbox']:checked:disabled + label:before {
+        border-right: 2px solid rgba(0, 0, 0, 0.26);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.26);
     }
-    [type="checkbox"].filled-in+label:after {
-        border-radius: 2px
+    [type='checkbox'].filled-in + label:after {
+        border-radius: 2px;
     }
-    [type="checkbox"].filled-in+label:before,[type="checkbox"].filled-in+label:after {
+    [type='checkbox'].filled-in + label:before,
+    [type='checkbox'].filled-in + label:after {
         content: '';
         left: 0;
         position: absolute;
-        transition: border .25s,background-color .25s,width .2s .1s,height .2s .1s,top .2s .1s,left .2s .1s;
-        z-index: 1
+        transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s, height 0.2s 0.1s,
+            top 0.2s 0.1s, left 0.2s 0.1s;
+        z-index: 1;
     }
-    [type="checkbox"].filled-in:not(:checked)+label:before {
-        width: 0; height: 0;
+    [type='checkbox'].filled-in:not(:checked) + label:before {
+        width: 0;
+        height: 0;
         border: 3px solid transparent;
-        top: 10px; left: 6px;
+        top: 10px;
+        left: 6px;
         transform: rotateZ(37deg);
-        transform-origin: 100% 100%
+        transform-origin: 100% 100%;
     }
-    [type="checkbox"].filled-in:not(:checked)+label:after {
-        width: 20px; height: 20px;
+    [type='checkbox'].filled-in:not(:checked) + label:after {
+        width: 20px;
+        height: 20px;
         background-color: transparent;
         border: 1px solid #d6c5ff;
         top: 0px;
-        z-index: 0
+        z-index: 0;
     }
-    [type="checkbox"].filled-in:checked+label:before {
-        top: 2px; left: 2px;
-        width: 8px; height: 13px;
+    [type='checkbox'].filled-in:checked + label:before {
+        top: 2px;
+        left: 2px;
+        width: 8px;
+        height: 13px;
         border-top: 2px solid transparent;
         border-left: 2px solid transparent;
         border-right: 2px solid #d6c5ff;
         border-bottom: 2px solid #d6c5ff;
         transform: rotateZ(37deg);
-        transform-origin: 100% 100%
+        transform-origin: 100% 100%;
     }
-    [type="checkbox"].filled-in:checked+label:after {
+    [type='checkbox'].filled-in:checked + label:after {
         top: 0px;
-        width: 20px; height: 20px;
+        width: 20px;
+        height: 20px;
         border: 1px solid #d6c5ff;
-        z-index: 0
+        z-index: 0;
     }
-    [type="checkbox"].filled-in:disabled:not(:checked)+label:before {
+    [type='checkbox'].filled-in:disabled:not(:checked) + label:before {
         background-color: transparent;
-        border: 1px solid transparent
+        border: 1px solid transparent;
     }
-    [type="checkbox"].filled-in:disabled:not(:checked)+label:after {
+    [type='checkbox'].filled-in:disabled:not(:checked) + label:after {
         border-color: transparent;
-        background-color: #BDBDBD
+        background-color: #bdbdbd;
     }
-    [type="checkbox"].filled-in:disabled:checked+label:before {
-        background-color: transparent
+    [type='checkbox'].filled-in:disabled:checked + label:before {
+        background-color: transparent;
     }
-    [type="checkbox"].filled-in:disabled:checked+label:after {
-        background-color: #BDBDBD;
-        border-color: #BDBDBD
+    [type='checkbox'].filled-in:disabled:checked + label:after {
+        background-color: #bdbdbd;
+        border-color: #bdbdbd;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -513,8 +504,8 @@
             }
             .privacyWrap {
                 font-size: 12px;
-                font-family: KozGoProLight, "微軟正黑體";
-                font-family: "微軟正黑體"\0; //for ie
+                font-family: KozGoProLight, '微軟正黑體';
+                font-family: '微軟正黑體' \0; //for ie
             }
         }
         .form-btn {
@@ -523,27 +514,33 @@
                 max-width: 180px;
                 font-size: 18px;
                 &:after {
-                    width: 1px; height: 26px;
-                    left: 0; right: 0; bottom: -13px;
+                    width: 1px;
+                    height: 26px;
+                    left: 0;
+                    right: 0;
+                    bottom: -13px;
                 }
             }
         }
     }
     .checkWrap {
-        [type="checkbox"]+label {
+        [type='checkbox'] + label {
             padding-left: 25px;
         }
-        [type="checkbox"].filled-in:not(:checked)+label:after {
-            width: 15px; height: 15px;
+        [type='checkbox'].filled-in:not(:checked) + label:after {
+            width: 15px;
+            height: 15px;
             top: 3px;
         }
-        [type="checkbox"].filled-in:checked+label:after {
+        [type='checkbox'].filled-in:checked + label:after {
             top: 3px;
-            width: 15px; height: 15px;
+            width: 15px;
+            height: 15px;
         }
-        [type="checkbox"].filled-in:checked+label:before {
+        [type='checkbox'].filled-in:checked + label:before {
             top: 5px;
-            width: 6px; height: 9px;
+            width: 6px;
+            height: 9px;
         }
     }
 }
@@ -552,7 +549,7 @@
     background-color: #fff;
 }
 .modal-backdrop.in {
-    opacity: .9;
+    opacity: 0.9;
 }
 .modal-content {
     background: none;
@@ -568,16 +565,17 @@
 .modal-body {
     padding: 0;
     button.close {
-        background: url("../images/btn-close.jpg") no-repeat center;
-        width: 33px; height: 33px;
+        background: url('../images/btn-close.jpg') no-repeat center;
+        width: 33px;
+        height: 33px;
         opacity: 1;
-        transition: all .3s;
+        transition: all 0.3s;
         span {
             opacity: 0;
         }
         &:hover {
             opacity: 0.8;
-            transition: all .3s;
+            transition: all 0.3s;
         }
     }
 }
