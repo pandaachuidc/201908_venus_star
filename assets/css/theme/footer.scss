@@ -1,0 +1,198 @@
+footer {
+    background: #0d1e4a;
+    color: #c0a36b;
+    .footer-container {
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: 50px 1.2rem 30px;
+        font-family:  "Noto Sans TC", "Source Sans Pro", "Microsoft JhengHei", "微軟正黑體", sans-serif;
+        font-family: "微軟正黑體"\0; //for ie
+        .footer-title {
+            font-size: 20px;
+            letter-spacing: .1em;
+            color: #c0a36b;
+            margin: 0 0 25px;
+        }
+        .shop {
+            font-size: 16px;
+            letter-spacing: .05em;
+            span {
+                display: inline-block;
+                padding: 0 7px 0 0;
+                margin: 0 7px 0 0;
+                border-right: 1px solid #c0a36b;
+            }
+        }
+        .topSection {
+            padding: 0 0 30px;
+            border-bottom: 1px solid rgba(192,163,107,0.2);
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-end;
+            .shopSection {
+                width: 50%;
+            }
+            .contactSection {
+                width: 50%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                .tel {
+                    width: 78%;
+                    color: #c0a36b;
+                    font-size: 20px;
+                    letter-spacing: .1em;
+                    a {
+                        color: #c0a36b;
+                        font-size: 24px;
+                        text-decoration: none;
+                        font-family: "Futura", "微軟正黑體";
+                        margin: 0 0 0 20px;
+                    }
+                }
+                .social {
+                    width: 22%;
+                    text-align: right;
+                    padding: 0;
+                    a {
+                        width: 50%;
+                        max-width: 50px;
+                        display: inline-block;
+                        opacity: 0.8;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        .bottomSection {
+            padding: 30px 0 0;
+            .shop-container {
+                display: flex;
+                .shopbox {
+                    width: 25%;
+                    .shop {
+                        margin: 0 0 20px;
+                    }
+                }
+            }
+        }
+    }
+    .copy {
+        text-align: center;
+        background: #0c1939;
+        font-size: 14px;
+        letter-spacing: .05em;
+        padding: 10px;
+        color: #605b7d;
+        font-family: "FuturaLight", "微軟正黑體";
+    }
+}
+@media screen and (max-width: 1000px) {
+    footer {
+        .footer-container {
+            padding: 30px 1.2rem;
+            .footer-title {
+                font-size: 18px;
+                margin: 0 0 15px;
+            }
+            .shop {
+                font-size: 14px;
+                span {
+                    padding: 0 5px 0 0;
+                    margin: 0 5px 0 0;
+                }
+            }
+            .topSection {
+                padding: 0 0 20px;
+                flex-wrap: wrap;
+                flex-direction: row;
+                .shopSection {
+                    width: 100%;
+                }
+                .contactSection {
+                    width: 100%;
+                    margin: 0 0 20px;
+                    .tel {
+                        font-size: 18px;
+                        a {
+                            margin: 0 0 0 15px;
+                        }
+                    }
+                }
+            }
+            .bottomSection {
+                padding: 20px 0 0;
+            }
+        }
+    }
+}
+// mobile
+@media screen and (max-width: 640px) {
+    footer {
+        .footer-container {
+            padding: 30px 1.2rem;
+            .footer-title {
+                font-size: 16px;
+                margin: 0 0 15px;
+            }
+            .shop {
+                font-size: 12px;
+                span {
+                    padding: 0 5px 0 0;
+                    margin: 0 5px 0 0;
+                }
+            }
+            .topSection {
+                padding: 0 0 20px;
+                flex-wrap: wrap;
+                flex-direction: row;
+                .shopSection {
+                    width: 100%;
+                }
+                .contactSection {
+                    width: 100%;
+                    flex-wrap: wrap;
+                    margin: 0 0 20px;
+                    .tel {
+                        width: 80%;
+                        font-size: 14px;
+                        a {
+                            font-size: 20px;
+                            margin: 0 0 0 15px;
+                        }
+                    }
+                    .social {
+                        width: 20%;
+                        a {
+                            width: 45%;
+                            max-width: 50px;
+                            display: inline-block;
+                            opacity: 0.8;
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottomSection {
+                padding: 20px 0 0;
+                .shop-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .shopbox {
+                        width: 100%;
+                        .shop {
+                            margin: 0 0 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .copy {
+            font-size: 12px;
+        }
+    }
+}

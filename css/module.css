@@ -1,0 +1,577 @@
+/*Design By DC  VIC*/
+
+/*=======================================
+			   Reset -
+=======================================*/
+body,h1,h2,h3,h4,h5,h6,p,blockquote,th,td,div,dl,dt,dd,ul,ol,li,pre,code,form,fieldset,legend,input,button,textarea {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration:none;
+	color:#000;
+	-webkit-tap-highlight-color:rgba(0,0,0);
+	-webkit-user-select: none;
+}
+body,td,th {
+	font-family:"Noto Sans TC",Arial,"微軟正黑體","Times New Roman",Verdana,Geneva;
+	font-size:16px;
+	line-height:1;
+	letter-spacing:0px;
+}
+img,fieldset {
+	border: 0;
+	outline: none;
+}
+ol,ul {
+	list-style: none outside none;
+}
+caption,th {
+	text-align: left;
+}
+
+* {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+.cf {
+	zoom:1;
+}
+.cf:before,
+.cf:after {
+	content:"";
+	display:table;
+}
+.cf:after {
+	clear:both;
+}
+.hidden-web {
+		display: none;
+	}
+.hidden-mobile {
+	display: block;
+}
+input[type="text"],input[type="password"]  {
+  -webkit-appearance: none;
+}
+/*=======================================
+			   Reset .
+=======================================*/
+/*====================================
+			Loading -
+====================================*/
+.animated {
+	  display: none;
+}
+.vic-animated {
+	display: none;
+}
+#loading{
+	width: 100%;
+	height: 100%;
+	background: #313131;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 9999;
+	line-height: 100%;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	-webkit-transition: opacity .8s .6s;
+	transition: opacity .8s .7s;
+	opacity: 1;
+}
+/* #loading.ani {
+	opacity: 0;
+} */
+/* #loading>div{
+	position: absolute;
+	margin:auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 316px;
+	height: 140px;
+}
+
+#loading img{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 auto;
+}
+#loading .show {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	width: 314px;
+	height: 102px;
+}
+ .area {
+	overflow: hidden;
+	width:0%;
+}
+#loading .progress{
+	position: relative;
+	margin-top: 9px;
+}
+#loading .progress h6 {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 8px;
+}
+#loading  p#txt{ 
+	text-align: center;
+    font-size: 1em;
+    height: 20px;
+    right: 6px;
+    margin: auto 0;
+    color: #fff;
+    display: inline-block;
+   }
+   .master .gift img {
+   	width: 100%;
+   	height: auto;
+   }
+   .btn-area-mob {
+   	display: none;
+   } */
+/*====================================
+			Loading .
+====================================*/
+/*=======================================
+			   Layout -
+=======================================*/
+.wrapper {
+    width: 100%;
+    min-width: 320px;
+}
+/*=======================================
+			   Layout .
+=======================================*/
+
+
+/*=====================================
+		      POSITION -
+=======================================*/
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.vertical-block {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin:auto 0;
+}
+.horizontal-block {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+}
+.ver-hor-block {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin:auto;
+}
+/*=====================================
+		      POSITION  .
+=======================================*/
+
+
+
+/*=====================================
+			Other -
+=======================================*/
+.as {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.more {
+	color:#45d8f4;
+	font-size: 16px;
+}
+.more a {
+	display: inline-block;
+	vertical-align: middle;
+	color:#45d8f4;
+}
+.more a:after {
+	content: "";
+	background: url("../images/mom/more-arrow.png") no-repeat;
+	width: 9px;
+	height: 17px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 15px;
+	position: relative;
+	top:-1px;
+}
+/*=====================================
+			Other .
+=======================================*/
+
+/*=====================================
+             Animate -
+=======================================*/
+.vic-animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-moz-keyframes cgColor {
+	0%,100% {
+		background: #7aa743;
+	}
+	50% {
+		background: #df7834;
+	}
+}
+@-webkit-keyframes cgColor {
+	0%,100% {
+		background: #7aa743;
+	}
+	50% {
+		background: #df7834;
+	}
+}
+@keyframes cgColor {
+	0%,100% {
+		background: #7aa743;
+	}
+	50% {
+		background: #df7834;
+	}
+}
+
+
+.jump-as {
+	-moz-animation:jump-as 1.2s linear infinite;
+	-webkit-animation:jump-as 1.2s linear infinite;
+	animation:jump-as 1.2s linear infinite;
+	
+}
+.jump-as:hover {
+	-moz-animation:none;
+	-webkit-animation:none;
+	animation:none;
+}
+
+@-moz-keyframes jump-as {
+	25% {
+		-webkit-transform: scale(1.06);
+		transform: scale(1.06);
+	}
+	75% {
+		-webkit-transform: scale(0.93);
+		transform: scale(0.93);
+	}
+}
+@-webkit-keyframes jump-as {
+	25% {
+		-webkit-transform: scale(1.06);
+		transform: scale(1.06);
+	}
+	75% {
+		-webkit-transform: scale(0.93);
+		transform: scale(0.93);
+	}
+}
+@keyframes jump-as {
+	25% {
+		-webkit-transform: scale(1.06);
+		transform: scale(1.06);
+	}
+	75% {
+		-webkit-transform: scale(0.93);
+		transform: scale(0.93);
+	}
+}
+
+
+@-moz-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+@-moz-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+    z-index: 4;
+  }
+
+  to {
+    opacity: 1;
+    z-index: 4;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    z-index: 4;
+  }
+
+  to {
+    opacity: 1;
+    z-index: 4;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    z-index: 4;
+  }
+
+  to {
+    opacity: 1;
+    z-index: 4;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+/*add*/
+
+@keyframes moveOne {
+		0% {
+			transform: translate(0px, 0px);
+		}
+		25% {
+			transform: translate(6px, 0px);
+		}
+		60% {
+			transform: translate(-6px, 0px);
+		}
+		100% {
+			transform: translate(0px, 0px);
+		}
+}
+@-webkit-keyframes moveOne {
+		0% {
+			transform: translate(0px, 0px);
+		}
+		25% {
+			transform: translate(6px, 0px);
+		}
+		60% {
+			transform: translate(-6px, 0px);
+		}
+		100% {
+			transform: translate(0px, 0px);
+		}
+}
+
+@keyframes moveTwo {
+		0% {
+			transform: translate(0px, 0px);
+		}
+		20% {
+			transform: translate(-4px, 0px);
+		}
+		55% {
+			transform: translate(8px, 0px);
+		}
+		100% {
+			transform: translate(0px, 0px);
+		}
+}
+@-webkit-keyframes moveTwo {
+		0% {
+			transform: translate(0px, 0px);
+		}
+		20% {
+			transform: translate(-4px, 0px);
+		}
+		55% {
+			transform: translate(8px, 0px);
+		}
+		100% {
+			transform: translate(0px, 0px);
+		}
+}
+@keyframes bounce{
+from, 20%, 53%, 80%, to {
+animation-timing-function: cubic-besizer(0.215, 0.610,0.355, 1.000);
+transform: translate3d(0,0,0);
+}
+
+40%, 43% {
+animation-timing-function: cubic-besizer(0.755, 0.050,0.855, 0.060);
+transform: translate3d(0,-30px,0);
+}
+
+70% {
+animation-timing-function: cubic-besizer(0.755, 0.050,0.855, 0.060);
+transform: translate3d(0,-15px,0);
+}
+
+90% {
+transform: translate3d(0,-4px,0);
+}
+}
+
+@-webkit-keyframes bounce{
+from, 20%, 53%, 80%, to {
+animation-timing-function: cubic-besizer(0.215, 0.610,0.355, 1.000);
+transform: translate3d(0,0,0);
+}
+
+40%, 43% {
+animation-timing-function: cubic-besizer(0.755, 0.050,0.855, 0.060);
+transform: translate3d(0,-30px,0);
+}
+
+70% {
+animation-timing-function: cubic-besizer(0.755, 0.050,0.855, 0.060);
+transform: translate3d(0,-15px,0);
+}
+
+90% {
+transform: translate3d(0,-4px,0);
+}
+}
+
+.bounceIn {
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+}
+@-webkit-keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.3);
+    transform: scale(.3);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  70% {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/*bounceIn 初始值縮小到畫面然後彈出*/
+@keyframes bounceIn{
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.3);
+    -ms-transform: scale(.3);
+    transform: scale(.3);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  70% {
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/*=====================================
+             Animate .
+=======================================*/
