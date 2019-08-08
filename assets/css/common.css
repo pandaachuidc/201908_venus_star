@@ -487,7 +487,7 @@ button {
   background: url("../images/kvbg-pc_w.jpg") no-repeat top center;
   background-size: 100%;
   margin: 0 auto;
-  padding: 0 2.5rem 100px;
+  padding: 0 2.5rem 180px;
   position: relative;
   z-index: 1; }
   .kvSection .kv-form .kv-formwrap {
@@ -957,8 +957,7 @@ button {
     margin: 50px auto; } }
 
 .starSection {
-  background: url("../images/starBg-pc_w.jpg") no-repeat bottom center;
-  background-size: 100%; }
+  background: url("../images/starBg-pc_w.jpg") no-repeat bottom center; }
   .starSection .starWrap {
     max-width: 1024px;
     margin: 0 auto; }
@@ -1111,8 +1110,7 @@ button {
   background: url("../images/stBg-pc_w.jpg") no-repeat top center; }
   .star02Section .starWrap {
     max-width: 1024px;
-    min-height: 2097px;
-    padding: 68px 0 0;
+    min-height: 1880px;
     margin: 0 auto; }
     .star02Section .starWrap .star02-content {
       position: relative; }
@@ -1150,7 +1148,7 @@ button {
             line-height: 1.5;
             text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6); }
           .star02Section .starWrap .star02-content .item .star-text .star-label {
-            margin: 30px 0 5px; }
+            margin: 24px 0 10px; }
           .star02Section .starWrap .star02-content .item .star-text .star-link {
             background: url("../images/star-linkBg.jpg") no-repeat center;
             background-size: 100%;
@@ -1178,7 +1176,7 @@ button {
             font-size: 13px; }
       .star02Section .starWrap .star02-content .item01 .star-text {
         max-width: 486px;
-        padding: 80px 0 0; }
+        padding-top: 156px; }
       .star02Section .starWrap .star02-content .item02 {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: reverse;
@@ -1187,11 +1185,11 @@ button {
         .star02Section .starWrap .star02-content .item02 .star-text {
           margin: 0 0 0 7.8%;
           max-width: 420px;
-          padding: 130px 0 0; }
+          padding-top: 109px; }
       .star02Section .starWrap .star02-content .item03 .star-text {
         margin: 0 9% 0 0;
         max-width: 400px;
-        padding: 80px 0 0; }
+        padding-top: 109px; }
 
 @media screen and (max-width: 1024px) {
   .star02Section {
@@ -1298,6 +1296,40 @@ button {
           .star02Section .starWrap .star02-content .item .star-text .note {
             margin: 30px 0 0;
             font-size: 13px; } }
+
+.vipSection {
+  background: url("../images/vipBg-pc_w.jpg") no-repeat top center;
+  font-family: 'Microsoft JhengHei', '微軟正黑體'; }
+  .vipSection .vip-container {
+    max-width: 1024px;
+    margin: 0 auto; }
+    .vipSection .vip-container .sec-title {
+      padding: 224px 0 110px; }
+      .vipSection .vip-container .sec-title .title-pc {
+        display: block; }
+      .vipSection .vip-container .sec-title .title-mb {
+        display: none; }
+    .vipSection .vip-container .vip-content .swiper-wrapper a {
+      display: block;
+      width: 413px;
+      text-decoration: none; }
+      .vipSection .vip-container .vip-content .swiper-wrapper a .vip-img {
+        max-width: 413px; }
+      .vipSection .vip-container .vip-content .swiper-wrapper a .vip-text .name {
+        color: #c3ab7f;
+        font-size: 30px;
+        padding-bottom: 27px; }
+      .vipSection .vip-container .vip-content .swiper-wrapper a .vip-text .contentWrapper {
+        font-size: 20px;
+        border-left: #ffffff 1px solid;
+        padding: 0 20px; }
+        .vipSection .vip-container .vip-content .swiper-wrapper a .vip-text .contentWrapper p {
+          color: #ffffff;
+          line-height: 30px;
+          padding-bottom: 20px; }
+        .vipSection .vip-container .vip-content .swiper-wrapper a .vip-text .contentWrapper span {
+          color: #c3ab7f;
+          font-family: Futura; }
 
 footer {
   background: #0d1e4a;

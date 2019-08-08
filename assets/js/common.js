@@ -40,7 +40,7 @@ $(function(){
     // VIP Slider
     vipSwiper = new Swiper ('.vip-content', {
         loop: true,
-        slidesPerView: 5,
+        slidesPerView: 3,
         centeredSlides: true,
         a11y: true,
         autoplay: {
