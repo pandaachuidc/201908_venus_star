@@ -1,11 +1,12 @@
 .vipSection {
     background: url('../images/vipBg-pc_w.jpg') no-repeat top center;
     font-family: 'Microsoft JhengHei', '微軟正黑體';
-    .vip-container {
-        max-width: 1024px;
-        margin: 0 auto;
+    padding-bottom: 140px;
+    .vipContainer {
         .sec-title {
             padding: 224px 0 110px;
+            max-width: 1092px;
+            margin: 0 auto;
 
             .title-pc {
                 display: block;
@@ -14,25 +15,61 @@
                 display: none;
             }
         }
-        .vip-content {
-            .swiper-wrapper {
+
+        .owl-carousel {
+            .owl-item {
+                -webkit-transform: scale(0.7);
+                -webkit-transition: 500ms;
+                transition: 500ms;
+                .vip-text {
+                    display: none; //文字只有中間會顯示
+                }
+            }
+            .center {
+                -webkit-transform: scale(1);
+                -webkit-transition: 500ms;
+                transition: 500ms;
+                .vip-text {
+                    display: block !important; //文字只有中間會顯示
+                }
+            }
+            .owl-nav {
+                width: 100%;
+                margin: -90px auto 0;
+                max-width: 1094px;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+            }
+            .item {
+                max-width: 412px;
+                -webkit-transition: 500ms;
+                transition: 500ms;
+                &:hover {
+                    -webkit-transition: 500ms;
+                    transition: 500ms;
+                    -webkit-transform: scale(0.95);
+                    text-decoration: none;
+                }
                 a {
                     display: block;
-                    width: 413px;
                     text-decoration: none;
                     .vip-img {
-                        max-width: 413px;
+                        img {
+                            -webkit-box-shadow: #081737 10px 10px 30px;
+                            box-shadow: #081737 10px 10px 30px;
+                        }
                     }
                     .vip-text {
                         .name {
                             color: #c3ab7f;
                             font-size: 30px;
-                            padding-bottom: 27px;
+                            padding: 47px 0 27px 0;
                         }
                         .contentWrapper {
                             font-size: 20px;
                             border-left: #ffffff 1px solid;
-                            padding:0 20px;
+                            padding-left: 20px;
                             p {
                                 color: #ffffff;
                                 line-height: 30px;
