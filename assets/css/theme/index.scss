@@ -545,8 +545,10 @@
     }
 }
 
+// popup
+
 .modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 .modal-backdrop.in {
     opacity: 0.9;
@@ -559,17 +561,18 @@
 }
 .modal-dialog {
     width: 100%;
-    max-width: 700px;
+    max-width: 841px;
     margin: 70px auto;
 }
 .modal-body {
     position: relative;
     padding: 0;
-    border: #e4cda4 3px solid;
+    border: #e4cda4 2px solid;
+    
     button.close {
         position: absolute;
-        top: -3px;
-        right: -3px;
+        top: -2px;
+        right: -2px;
         background: url('../images/btn-close.jpg') no-repeat center;
         width: 40px;
         height: 40px;
@@ -582,6 +585,39 @@
             opacity: 0.8;
             transition: all 0.3s;
         }
+    }
+    .vipModalWrap {
+        padding: 100px 66px 50px;
+        background-color: #000;
+        text-align: center;
+        h1{
+            color: #e4cda4;
+            font-size: 30px;
+        }
+        h3{
+            font-size: 25px;
+            color: #fcfcfc;
+            padding-bottom: 33px;
+        }
+        p{
+            color: #fcfcfc;
+            line-height: 1.8;
+            text-align: left;
+        }
+        .popup-bar{
+            padding: 33px 0;
+        }
+        span{
+            color: #fcfcfc;
+            line-height: 1.8;
+            display:inline-block;//解決padding-top失效
+            padding: 33px 0;
+        }
+        a img{
+            padding: 10px 0;
+        }
+        
+
     }
 }
 @media screen and (max-width: 640px) {

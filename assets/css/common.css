@@ -695,7 +695,7 @@ button {
         border-bottom: 1px solid #d6c5ff; }
     .kv-formbox .form-content .form-column select,
     .kv-formbox .form-content .form-column input {
-      font-family: 'KozGoPro', 'Noto Sans TC', 'Source Sans Pro', 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+      font-family: 'KozGoPro', 'Noto Sans TC', 'Source Sans Pro', 'Microsoft JhengHei', '微軟正黑體', sans-serif;
       font-family: '微軟正黑體' \0; }
   .kv-formbox .form-content .privacyWrap {
     width: 100%; }
@@ -799,9 +799,9 @@ button {
   content: '';
   left: 0;
   position: absolute;
-  -webkit-transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s, height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
-  -o-transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s, height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
-  transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s, height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
+  -webkit-transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s, height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
+  -o-transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s, height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
+  transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s, height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
   z-index: 1; }
 
 .checkWrap [type='checkbox'].filled-in:not(:checked) + label:before {
@@ -917,7 +917,7 @@ button {
     height: 9px; } }
 
 .modal-backdrop {
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.9); }
 
 .modal-backdrop.in {
   opacity: 0.9; }
@@ -931,17 +931,17 @@ button {
 
 .modal-dialog {
   width: 100%;
-  max-width: 700px;
+  max-width: 841px;
   margin: 70px auto; }
 
 .modal-body {
   position: relative;
   padding: 0;
-  border: #e4cda4 3px solid; }
+  border: #e4cda4 2px solid; }
   .modal-body button.close {
     position: absolute;
-    top: -3px;
-    right: -3px;
+    top: -2px;
+    right: -2px;
     background: url("../images/btn-close.jpg") no-repeat center;
     width: 40px;
     height: 40px;
@@ -956,6 +956,30 @@ button {
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s; }
+  .modal-body .vipModalWrap {
+    padding: 100px 66px 50px;
+    background-color: #000;
+    text-align: center; }
+    .modal-body .vipModalWrap h1 {
+      color: #e4cda4;
+      font-size: 30px; }
+    .modal-body .vipModalWrap h3 {
+      font-size: 25px;
+      color: #fcfcfc;
+      padding-bottom: 33px; }
+    .modal-body .vipModalWrap p {
+      color: #fcfcfc;
+      line-height: 1.8;
+      text-align: left; }
+    .modal-body .vipModalWrap .popup-bar {
+      padding: 33px 0; }
+    .modal-body .vipModalWrap span {
+      color: #fcfcfc;
+      line-height: 1.8;
+      display: inline-block;
+      padding: 33px 0; }
+    .modal-body .vipModalWrap a img {
+      padding: 10px 0; }
 
 @media screen and (max-width: 640px) {
   .modal-dialog {
