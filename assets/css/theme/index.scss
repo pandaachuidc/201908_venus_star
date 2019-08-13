@@ -546,7 +546,7 @@
 }
 
 .modal-backdrop {
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .modal-backdrop.in {
     opacity: 0.9;
@@ -563,11 +563,16 @@
     margin: 70px auto;
 }
 .modal-body {
+    position: relative;
     padding: 0;
+    border: #e4cda4 3px solid;
     button.close {
+        position: absolute;
+        top: -3px;
+        right: -3px;
         background: url('../images/btn-close.jpg') no-repeat center;
-        width: 33px;
-        height: 33px;
+        width: 40px;
+        height: 40px;
         opacity: 1;
         transition: all 0.3s;
         span {
