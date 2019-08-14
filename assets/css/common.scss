@@ -98,6 +98,7 @@ html {
 body {
     font-family: 'Noto Sans TC', 'Source Sans Pro', 'Microsoft JhengHei', '微軟正黑體', sans-serif;
     font-family: '微軟正黑體' \0; //for ie
+    font-size: 16px;//使用rem統一
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: normal;

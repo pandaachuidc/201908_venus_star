@@ -1,5 +1,6 @@
 .starSection {
     background: url('../images/starBg-pc_w.jpg') no-repeat bottom center;
+    background-color: #09153e;
     .starWrap {
         max-width: 1024px;
         margin: 0 auto;
@@ -93,10 +94,13 @@
 // view 1024
 @media screen and (max-width: 1024px) {
     .starSection {
-        background: #0b2252;
+        background: #09153e; //去除bg
         .starWrap {
             .sec-title {
-                margin: 0 auto 20px;
+                margin: 0 auto ;
+            }
+            .star-mb{
+                display: none;
             }
             .sec-content {
                 .star-text {
@@ -137,11 +141,11 @@
 // mobile layout
 @media screen and (max-width: 640px) {
     .starSection {
-        background: url('../images/starBg-mb.jpg') no-repeat bottom center #0b2252;
+        background: url('../images/starBg-mb.jpg') no-repeat bottom center #09153e;
         background-size: 100%;
         .starWrap {
             .sec-title {
-                margin: 0 auto 50px;
+                margin: 0 auto ;
                 padding: 0 1.2rem;
                 .title-pc {
                     display: none;
