@@ -108,7 +108,7 @@
             }
         }
         .kv-form {
-            background: url('../images/kvbg-pc.jpg') no-repeat top center #0a2153;
+            background: url('../images/kvbg-pc.jpg') no-repeat top center #0c153f;
             background-size: 100%;
         }
     }
@@ -195,7 +195,7 @@
             }
         }
         .kv-form {
-            background: url('../images/kvbg-mb.jpg') no-repeat top center #0a2153;
+            background: url('../images/kvbg-mb.jpg') no-repeat top center #0c153f;
             background-size: 100%;
             margin: 0 auto;
             padding: 0 1.2rem 50px;
@@ -568,7 +568,8 @@
     position: relative;
     padding: 0;
     border: #e4cda4 2px solid;
-    
+    font-family: 'Microsoft JhengHei', '微軟正黑體';
+
     button.close {
         position: absolute;
         top: -2px;
@@ -590,34 +591,33 @@
         padding: 100px 66px 50px;
         background-color: #000;
         text-align: center;
-        h1{
+        h1 {
             color: #e4cda4;
             font-size: 30px;
+            font-weight: bold;
         }
-        h3{
+        h3 {
             font-size: 25px;
             color: #fcfcfc;
             padding-bottom: 33px;
         }
-        p{
+        p {
             color: #fcfcfc;
             line-height: 1.8;
             text-align: left;
         }
-        .popup-bar{
+        .popup-bar {
             padding: 33px 0;
         }
-        span{
+        span {
             color: #fcfcfc;
             line-height: 1.8;
-            display:inline-block;//解決padding-top失效
+            display: inline-block; //解決padding-top失效
             padding: 33px 0;
         }
-        a img{
+        a img {
             padding: 10px 0;
         }
-        
-
     }
 }
 @media screen and (max-width: 640px) {

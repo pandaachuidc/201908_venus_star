@@ -1,0 +1,68 @@
+.momSection {
+    background: url(../images/momBg-pc_w.jpg) no-repeat bottom center;
+    padding-bottom: 87px;
+    .momContainer {
+        .sec-title {
+            padding: 46px 0 116px;
+            max-width: 1024px;
+            margin: 0 auto;
+
+            .title-pc {
+                display: block;
+            }
+            .title-mb {
+                display: none;
+            }
+        }
+        .serviceWrapper {
+            margin: 0 auto;
+            max-width: 610px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            div {
+                padding-bottom: 55px;
+                img {
+                    padding-bottom: 23px;
+                }
+                p {
+                    color: #d0b685;
+                    font-family: 'Microsoft JhengHei', '微軟正黑體';
+                    font-size: 22;
+                    text-align: center;
+                    line-height: 1.5;
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        a {
+            background: url('../images/star-linkBg.jpg') no-repeat center;
+            background-size: 100%;
+            max-width: 437px;
+            margin: 0 auto;
+            text-align: center;
+            letter-spacing: 0.1em;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 1.25;
+            padding: 12px 0;
+            color: #0a153e;
+            display: block;
+            &:after {
+                content: '';
+                display: inline-block;
+                width: 10px;
+                height: 17px;
+                background: url('../images/star-linkArrow.png') no-repeat center;
+                background-size: 100%;
+                margin: 0 0 0 5px;
+            }
+            &:hover {
+                text-decoration: none;
+                opacity: 0.8;
+            }
+        }
+    }
+}

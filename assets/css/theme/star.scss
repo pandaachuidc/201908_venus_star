@@ -1,5 +1,5 @@
 .starSection {
-    background: url("../images/starBg-pc_w.jpg") no-repeat bottom center ;
+    background: url('../images/starBg-pc_w.jpg') no-repeat bottom center;
     .starWrap {
         max-width: 1024px;
         margin: 0 auto;
@@ -12,11 +12,15 @@
                 display: none;
             }
         }
+        .star-mb {
+            display: none;
+        }
         .sec-content {
             position: relative;
             .star-text {
                 position: absolute;
-                left: 5.1%; top: 21.6%;
+                left: 5.1%;
+                top: 21.6%;
                 width: 43%;
                 color: #fff;
                 .name {
@@ -28,12 +32,14 @@
                         display: inline-block;
                         position: relative;
                         &:after {
-                            content:"";
+                            content: '';
                             display: block;
                             position: absolute;
-                            top: -50px; right: -60px;
-                            width: 124px; height: 132px;
-                            background: url("../images/star-title.png") no-repeat center;
+                            top: -50px;
+                            right: -60px;
+                            width: 124px;
+                            height: 132px;
+                            background: url('../images/star-title.png') no-repeat center;
                         }
                     }
                 }
@@ -46,10 +52,10 @@
                     margin: 30px 0 5px;
                 }
                 .star-link {
-                    background: url("../images/star-linkBg.jpg") no-repeat center;
+                    background: url('../images/star-linkBg.jpg') no-repeat center;
                     background-size: 100%;
                     text-align: center;
-                    letter-spacing: .1em;
+                    letter-spacing: 0.1em;
                     font-weight: bold;
                     font-size: 24px;
                     line-height: 1.25;
@@ -57,16 +63,17 @@
                     color: #0a153e;
                     display: block;
                     &:after {
-                        content: "";
+                        content: '';
                         display: inline-block;
-                        width: 10px; height: 17px;
-                        background: url("../images/star-linkArrow.png") no-repeat center;
+                        width: 10px;
+                        height: 17px;
+                        background: url('../images/star-linkArrow.png') no-repeat center;
                         background-size: 100%;
                         margin: 0 0 0 5px;
                     }
                     &:hover {
                         text-decoration: none;
-                        opacity: .8;
+                        opacity: 0.8;
                     }
                 }
                 .note {
@@ -77,15 +84,11 @@
             .star-pc {
                 display: block;
             }
-            .star-mb {
-                display: none;
-            }
         }
     }
 }
 // view 1366
 @media screen and (max-width: 1500px) {
-    
 }
 // view 1024
 @media screen and (max-width: 1024px) {
@@ -102,9 +105,11 @@
                         margin: 0 auto 50px;
                         span {
                             &:after {
-                                top: -40px; right: -50px;
-                                width: 100px; height: 106px;
-                                background: url("../images/star-title.png") no-repeat center;
+                                top: -40px;
+                                right: -50px;
+                                width: 100px;
+                                height: 106px;
+                                background: url('../images/star-title.png') no-repeat center;
                                 background-size: 100%;
                             }
                         }
@@ -132,7 +137,7 @@
 // mobile layout
 @media screen and (max-width: 640px) {
     .starSection {
-        background: url("../images/starBg-mb.jpg") no-repeat bottom center #0b2252;
+        background: url('../images/starBg-mb.jpg') no-repeat bottom center #0b2252;
         background-size: 100%;
         .starWrap {
             .sec-title {
@@ -145,10 +150,15 @@
                     display: block;
                 }
             }
+            .star-mb {
+                display: block;
+            }
             .sec-content {
                 .star-text {
                     position: relative;
-                    left: 0; right: 0; top: 0;
+                    left: 0;
+                    right: 0;
+                    top: 0;
                     width: 90%;
                     max-width: 320px;
                     margin: 0 auto;
@@ -158,9 +168,11 @@
                         margin: 0 auto 50px;
                         span {
                             &:after {
-                                top: -35px; right: -40px;
-                                width: 85px; height: 91px;
-                                background: url("../images/star-title.png") no-repeat center;
+                                top: -35px;
+                                right: -40px;
+                                width: 85px;
+                                height: 91px;
+                                background: url('../images/star-title.png') no-repeat center;
                                 background-size: 100%;
                             }
                         }
@@ -169,15 +181,16 @@
                         font-size: 15px;
                     }
                     .star-label {
-                        margin: 15px -.8rem 5px;
+                        margin: 15px -0.8rem 5px;
                     }
                     .star-link {
                         font-size: 18px;
                         padding: 10px 0;
                         &:after {
-                            content: "";
-                            width: 7px; height: 12px;
-                            background: url("../images/star-linkArrow.png") no-repeat center;
+                            content: '';
+                            width: 7px;
+                            height: 12px;
+                            background: url('../images/star-linkArrow.png') no-repeat center;
                             background-size: 100%;
                         }
                     }
@@ -189,24 +202,19 @@
                 .star-pc {
                     display: none;
                 }
-                .star-mb {
-                    display: block;
-                }
             }
         }
     }
 }
 // iphone XS Max, Plus
 @media screen and (max-width: 414px) {
-    
 }
 // iphone XS, iphone X
 @media screen and (max-width: 375px) {
-    
 }
 
 .star02Section {
-    background: url("../images/stBg-pc_w.jpg") no-repeat top center;
+    background: url('../images/stBg-pc_w.jpg') no-repeat top center;
     .starWrap {
         max-width: 1024px;
         min-height: 1880px;
@@ -231,12 +239,14 @@
                             display: inline-block;
                             position: relative;
                             &:after {
-                                content:"";
+                                content: '';
                                 display: block;
                                 position: absolute;
-                                top: -50px; right: -60px;
-                                width: 124px; height: 132px;
-                                background: url("../images/star-title.png") no-repeat center;
+                                top: -50px;
+                                right: -60px;
+                                width: 124px;
+                                height: 132px;
+                                background: url('../images/star-title.png') no-repeat center;
                             }
                         }
                     }
@@ -249,10 +259,10 @@
                         margin: 24px 0 10px;
                     }
                     .star-link {
-                        background: url("../images/star-linkBg.jpg") no-repeat center;
+                        background: url('../images/star-linkBg.jpg') no-repeat center;
                         background-size: 100%;
                         text-align: center;
-                        letter-spacing: .1em;
+                        letter-spacing: 0.1em;
                         font-weight: bold;
                         font-size: 24px;
                         line-height: 1.25;
@@ -260,16 +270,17 @@
                         color: #0a153e;
                         display: block;
                         &:after {
-                            content: "";
+                            content: '';
                             display: inline-block;
-                            width: 10px; height: 17px;
-                            background: url("../images/star-linkArrow.png") no-repeat center;
+                            width: 10px;
+                            height: 17px;
+                            background: url('../images/star-linkArrow.png') no-repeat center;
                             background-size: 100%;
                             margin: 0 0 0 5px;
                         }
                         &:hover {
                             text-decoration: none;
-                            opacity: .8;
+                            opacity: 0.8;
                         }
                     }
                     .note {
@@ -305,7 +316,7 @@
 // view 1024
 @media screen and (max-width: 1024px) {
     .star02Section {
-        background: url("../images/stBg-pc.jpg") no-repeat top center #0d1e4a;
+        background: url('../images/stBg-pc.jpg') no-repeat top center #0d1e4a;
         background-size: 100%;
         .starWrap {
             max-width: 1024px;
@@ -318,9 +329,11 @@
                             margin: 0 auto 50px;
                             span {
                                 &:after {
-                                    top: -40px; right: -50px;
-                                    width: 100px; height: 106px;
-                                    background: url("../images/star-title.png") no-repeat center;
+                                    top: -40px;
+                                    right: -50px;
+                                    width: 100px;
+                                    height: 106px;
+                                    background: url('../images/star-title.png') no-repeat center;
                                     background-size: 100%;
                                 }
                             }
@@ -370,7 +383,7 @@
 // mobile layout
 @media screen and (max-width: 640px) {
     .star02Section {
-        background: url("../images/stBg-mb.jpg") no-repeat top center #0d1e4a;
+        background: url('../images/stBg-mb.jpg') no-repeat top center #0d1e4a;
         background-size: 100%;
         .starWrap {
             padding: 20px 1.2rem 0;
@@ -389,12 +402,14 @@
                                 display: inline-block;
                                 position: relative;
                                 &:after {
-                                    content:"";
+                                    content: '';
                                     display: block;
                                     position: absolute;
-                                    top: -50px; right: -60px;
-                                    width: 124px; height: 132px;
-                                    background: url("../images/star-title.png") no-repeat center;
+                                    top: -50px;
+                                    right: -60px;
+                                    width: 124px;
+                                    height: 132px;
+                                    background: url('../images/star-title.png') no-repeat center;
                                 }
                             }
                         }
@@ -407,10 +422,10 @@
                             margin: 30px 0 5px;
                         }
                         .star-link {
-                            background: url("../images/star-linkBg.jpg") no-repeat center;
+                            background: url('../images/star-linkBg.jpg') no-repeat center;
                             background-size: 100%;
                             text-align: center;
-                            letter-spacing: .1em;
+                            letter-spacing: 0.1em;
                             font-weight: bold;
                             font-size: 24px;
                             line-height: 1.25;
@@ -418,16 +433,17 @@
                             color: #0a153e;
                             display: block;
                             &:after {
-                                content: "";
+                                content: '';
                                 display: inline-block;
-                                width: 10px; height: 17px;
-                                background: url("../images/star-linkArrow.png") no-repeat center;
+                                width: 10px;
+                                height: 17px;
+                                background: url('../images/star-linkArrow.png') no-repeat center;
                                 background-size: 100%;
                                 margin: 0 0 0 5px;
                             }
                             &:hover {
                                 text-decoration: none;
-                                opacity: .8;
+                                opacity: 0.8;
                             }
                         }
                         .note {
