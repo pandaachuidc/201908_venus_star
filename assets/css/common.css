@@ -1191,46 +1191,50 @@ button {
         display: block; }
     .starSection .starWrap .star-mb {
       display: block; }
-    .starSection .starWrap .sec-content .star-text {
-      position: relative;
-      left: 0;
-      right: 0;
-      top: 0;
-      width: 90%;
-      max-width: 320px;
-      margin: 0 auto;
-      padding: 0; }
-      .starSection .starWrap .sec-content .star-text .name {
-        font-size: 25px;
-        margin: 0 auto 50px; }
-        .starSection .starWrap .sec-content .star-text .name span:after {
-          top: -35px;
-          right: -40px;
-          width: 85px;
-          height: 91px;
-          background: url("../images/star-title.png") no-repeat center;
-          background-size: 100%; }
-      .starSection .starWrap .sec-content .star-text p {
-        font-size: 15px; }
-      .starSection .starWrap .sec-content .star-text .star-label {
-        margin: 15px -0.8rem 5px; }
-      .starSection .starWrap .sec-content .star-text .star-link {
-        font-size: 18px;
-        padding: 10px 0; }
-        .starSection .starWrap .sec-content .star-text .star-link:after {
-          content: '';
-          width: 7px;
-          height: 12px;
-          background: url("../images/star-linkArrow.png") no-repeat center;
-          background-size: 100%; }
-      .starSection .starWrap .sec-content .star-text .note {
-        margin: 10px 0 0;
-        font-size: 12px; }
-    .starSection .starWrap .sec-content .star-pc {
-      display: none; } }
+    .starSection .starWrap .sec-content {
+      padding-bottom: 50px; }
+      .starSection .starWrap .sec-content .star-text {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 90%;
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 0; }
+        .starSection .starWrap .sec-content .star-text .name {
+          font-size: 25px;
+          margin: 0 auto 50px; }
+          .starSection .starWrap .sec-content .star-text .name span:after {
+            top: -35px;
+            right: -40px;
+            width: 85px;
+            height: 91px;
+            background: url("../images/star-title.png") no-repeat center;
+            background-size: 100%; }
+        .starSection .starWrap .sec-content .star-text p {
+          font-size: 15px; }
+        .starSection .starWrap .sec-content .star-text .star-label {
+          margin: 15px -0.8rem 5px; }
+        .starSection .starWrap .sec-content .star-text .star-link {
+          font-size: 18px;
+          padding: 10px 0; }
+          .starSection .starWrap .sec-content .star-text .star-link:after {
+            content: '';
+            width: 7px;
+            height: 12px;
+            background: url("../images/star-linkArrow.png") no-repeat center;
+            background-size: 100%; }
+        .starSection .starWrap .sec-content .star-text .note {
+          margin: 10px 0 0;
+          font-size: 12px; }
+      .starSection .starWrap .sec-content .star-pc {
+        display: none; } }
 
 .star02Section {
   background: url("../images/stBg-pc_w.jpg") no-repeat top center; }
+  .star02Section .star-mb {
+    display: none; }
   .star02Section .starWrap {
     max-width: 1024px;
     min-height: 1880px;
@@ -1246,6 +1250,8 @@ button {
         justify-content: space-between; }
         .star02Section .starWrap .star02-content .item .star-pic {
           width: 50%; }
+          .star02Section .starWrap .star02-content .item .star-pic .star-pc {
+            display: block; }
         .star02Section .starWrap .star02-content .item .star-text {
           width: 50%;
           color: #fff; }
@@ -1272,6 +1278,8 @@ button {
             text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6); }
           .star02Section .starWrap .star02-content .item .star-text .star-label {
             margin: 24px 0 10px; }
+          .star02Section .starWrap .star02-content .item .star-text .star-pc {
+            display: block; }
           .star02Section .starWrap .star02-content .item .star-text .star-link {
             background: url("../images/star-linkBg.jpg") no-repeat center;
             background-size: 100%;
@@ -1318,9 +1326,12 @@ button {
   .star02Section {
     background: url("../images/stBg-pc.jpg") no-repeat top center #0d1e4a;
     background-size: 100%; }
+    .star02Section .star-mb {
+      display: none; }
     .star02Section .starWrap {
       max-width: 1024px;
-      min-height: auto; }
+      min-height: auto;
+      padding-bottom: 48px; }
       .star02Section .starWrap .star02-content .item .star-text .name {
         font-size: 32px;
         margin: 0 auto 50px; }
@@ -1365,17 +1376,39 @@ button {
     background: url("../images/stBg-mb.jpg") no-repeat top center #0d1e4a;
     background-size: 100%; }
     .star02Section .starWrap {
-      padding: 20px 1.2rem 0;
       margin: 0 auto; }
       .star02Section .starWrap .star02-content {
         display: block; }
+        .star02Section .starWrap .star02-content .star-pc {
+          display: none; }
+        .star02Section .starWrap .star02-content .star-mb {
+          display: block; }
+        .star02Section .starWrap .star02-content .item01 {
+          padding-top: 40px; }
+          .star02Section .starWrap .star02-content .item01 .star-text {
+            padding-top: 40px; }
+        .star02Section .starWrap .star02-content .item02 {
+          padding-top: 104px; }
+          .star02Section .starWrap .star02-content .item02 .star-text {
+            padding-top: 104px; }
+        .star02Section .starWrap .star02-content .item03 {
+          padding-top: 100px; }
+          .star02Section .starWrap .star02-content .item03 .star-text {
+            padding-top: 100px; }
+        .star02Section .starWrap .star02-content .item .star-pic .star-pc {
+          display: none; }
+        .star02Section .starWrap .star02-content .item .star-pic .star-mb {
+          display: block; }
         .star02Section .starWrap .star02-content .item .star-text {
-          color: #fff; }
+          color: #fff;
+          max-width: 350px;
+          padding-bottom: 30px; }
           .star02Section .starWrap .star02-content .item .star-text .name {
-            font-size: 36px;
+            font-size: 20px;
             font-weight: bold;
+            padding-bottom: 45px;
             text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
-            margin: 0 auto 70px; }
+            margin: 0 auto; }
             .star02Section .starWrap .star02-content .item .star-text .name span {
               display: inline-block;
               position: relative; }
@@ -1383,42 +1416,49 @@ button {
                 content: '';
                 display: block;
                 position: absolute;
-                top: -50px;
-                right: -60px;
-                width: 124px;
-                height: 132px;
-                background: url("../images/star-title.png") no-repeat center; }
+                top: -35px;
+                right: -40px;
+                width: 85px;
+                height: 91px;
+                background: url("../images/star-title.png") no-repeat center;
+                background-size: 100%; }
           .star02Section .starWrap .star02-content .item .star-text p {
-            font-size: 20px;
+            font-size: 15px;
             line-height: 1.5;
             text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6); }
           .star02Section .starWrap .star02-content .item .star-text .star-label {
-            margin: 30px 0 5px; }
-          .star02Section .starWrap .star02-content .item .star-text .star-link {
-            background: url("../images/star-linkBg.jpg") no-repeat center;
-            background-size: 100%;
-            text-align: center;
-            letter-spacing: 0.1em;
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 1.25;
-            padding: 12px 0;
-            color: #0a153e;
+            margin: 30px 0 5px -12px;
+            width: 105%; }
+          .star02Section .starWrap .star02-content .item .star-text .star-pc {
+            display: none; }
+          .star02Section .starWrap .star02-content .item .star-text .star-mb {
             display: block; }
-            .star02Section .starWrap .star02-content .item .star-text .star-link:after {
-              content: '';
-              display: inline-block;
-              width: 10px;
-              height: 17px;
-              background: url("../images/star-linkArrow.png") no-repeat center;
-              background-size: 100%;
-              margin: 0 0 0 5px; }
-            .star02Section .starWrap .star02-content .item .star-text .star-link:hover {
-              text-decoration: none;
-              opacity: 0.8; }
           .star02Section .starWrap .star02-content .item .star-text .note {
             margin: 30px 0 0;
-            font-size: 13px; } }
+            font-size: 13px; }
+      .star02Section .starWrap .star-link {
+        background: url("../images/star-linkBg.jpg") no-repeat center;
+        background-size: 100%;
+        text-align: center;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 1.25;
+        padding: 12px 0;
+        margin: 0 10%;
+        color: #0a153e;
+        display: block; }
+        .star02Section .starWrap .star-link:after {
+          content: '';
+          display: inline-block;
+          width: 7px;
+          height: 12px;
+          background: url("../images/star-linkArrow.png") no-repeat center;
+          background-size: 100%;
+          margin: 0 0 0 5px; }
+        .star02Section .starWrap .star-link:hover {
+          text-decoration: none;
+          opacity: 0.8; } }
 
 .vipSection {
   background: url("../images/vipBg-pc_w.jpg") no-repeat top center;

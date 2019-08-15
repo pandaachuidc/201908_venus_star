@@ -88,6 +88,7 @@
         }
     }
 }
+
 // view 1366
 @media screen and (max-width: 1500px) {
 }
@@ -97,9 +98,9 @@
         background: #09153e; //去除bg
         .starWrap {
             .sec-title {
-                margin: 0 auto ;
+                margin: 0 auto;
             }
-            .star-mb{
+            .star-mb {
                 display: none;
             }
             .sec-content {
@@ -145,7 +146,7 @@
         background-size: 100%;
         .starWrap {
             .sec-title {
-                margin: 0 auto ;
+                margin: 0 auto;
                 padding: 0 1.2rem;
                 .title-pc {
                     display: none;
@@ -158,6 +159,7 @@
                 display: block;
             }
             .sec-content {
+                padding-bottom: 50px;
                 .star-text {
                     position: relative;
                     left: 0;
@@ -217,8 +219,13 @@
 @media screen and (max-width: 375px) {
 }
 
+// ----------------------- star02Section -----------------------
+
 .star02Section {
     background: url('../images/stBg-pc_w.jpg') no-repeat top center;
+    .star-mb {
+        display: none;
+    }
     .starWrap {
         max-width: 1024px;
         min-height: 1880px;
@@ -230,6 +237,12 @@
                 justify-content: space-between;
                 .star-pic {
                     width: 50%;
+                    .star-pc {
+                        display: block;
+                    }
+                    // .star-mb {
+                    //     display: none;
+                    // }
                 }
                 .star-text {
                     width: 50%;
@@ -262,6 +275,12 @@
                     .star-label {
                         margin: 24px 0 10px;
                     }
+                    .star-pc {
+                        display: block;
+                    }
+                    // .star-mb {
+                    //     display: none;
+                    // }
                     .star-link {
                         background: url('../images/star-linkBg.jpg') no-repeat center;
                         background-size: 100%;
@@ -322,9 +341,13 @@
     .star02Section {
         background: url('../images/stBg-pc.jpg') no-repeat top center #0d1e4a;
         background-size: 100%;
+        .star-mb {
+            display: none;
+        }
         .starWrap {
             max-width: 1024px;
             min-height: auto;
+            padding-bottom: 48px;
             .star02-content {
                 .item {
                     .star-text {
@@ -390,18 +413,53 @@
         background: url('../images/stBg-mb.jpg') no-repeat top center #0d1e4a;
         background-size: 100%;
         .starWrap {
-            padding: 20px 1.2rem 0;
             margin: 0 auto;
             .star02-content {
                 display: block;
+                .star-pc {
+                    display: none;
+                }
+                .star-mb {
+                    display: block;
+                }
+                .item01 {
+                    padding-top: 40px;
+                    .star-text {
+                        padding-top: 40px;
+                    }
+                }
+                .item02 {
+                    padding-top: 104px;
+                    .star-text {
+                        padding-top: 104px;
+                    }
+                }
+                .item03 {
+                    padding-top: 100px;
+                    .star-text {
+                        padding-top: 100px;
+                    }
+                }
+
                 .item {
+                    .star-pic {
+                        .star-pc {
+                            display: none;
+                        }
+                        .star-mb {
+                            display: block;
+                        }
+                    }
                     .star-text {
                         color: #fff;
+                        max-width: 350px;
+                        padding-bottom: 30px;
                         .name {
-                            font-size: 36px;
+                            font-size: 20px;
                             font-weight: bold;
+                            padding-bottom: 45px;
                             text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
-                            margin: 0 auto 70px;
+                            margin: 0 auto;
                             span {
                                 display: inline-block;
                                 position: relative;
@@ -409,47 +467,31 @@
                                     content: '';
                                     display: block;
                                     position: absolute;
-                                    top: -50px;
-                                    right: -60px;
-                                    width: 124px;
-                                    height: 132px;
+                                    top: -35px;
+                                    right: -40px;
+                                    width: 85px;
+                                    height: 91px;
                                     background: url('../images/star-title.png') no-repeat center;
+                                    background-size: 100%;
                                 }
                             }
                         }
                         p {
-                            font-size: 20px;
+                            font-size: 15px;
                             line-height: 1.5;
                             text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
                         }
                         .star-label {
-                            margin: 30px 0 5px;
+                            margin: 30px 0 5px -12px;
+                            width: 105%;
                         }
-                        .star-link {
-                            background: url('../images/star-linkBg.jpg') no-repeat center;
-                            background-size: 100%;
-                            text-align: center;
-                            letter-spacing: 0.1em;
-                            font-weight: bold;
-                            font-size: 24px;
-                            line-height: 1.25;
-                            padding: 12px 0;
-                            color: #0a153e;
+                        .star-pc {
+                            display: none;
+                        }
+                        .star-mb {
                             display: block;
-                            &:after {
-                                content: '';
-                                display: inline-block;
-                                width: 10px;
-                                height: 17px;
-                                background: url('../images/star-linkArrow.png') no-repeat center;
-                                background-size: 100%;
-                                margin: 0 0 0 5px;
-                            }
-                            &:hover {
-                                text-decoration: none;
-                                opacity: 0.8;
-                            }
                         }
+
                         .note {
                             margin: 30px 0 0;
                             font-size: 13px;
@@ -457,8 +499,36 @@
                     }
                 }
             }
+
+            .star-link {
+                background: url('../images/star-linkBg.jpg') no-repeat center;
+                background-size: 100%;
+                text-align: center;
+                letter-spacing: 0.1em;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 1.25;
+                padding: 12px 0;
+                margin: 0 10%;
+                color: #0a153e;
+                display: block;
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    width: 7px;
+                    height: 12px;
+                    background: url('../images/star-linkArrow.png') no-repeat center;
+                    background-size: 100%;
+                    margin: 0 0 0 5px;
+                }
+                &:hover {
+                    text-decoration: none;
+                    opacity: 0.8;
+                }
+            }
         }
     }
 }
 
-// popup
+@media screen and (max-width: 375px) {
+}
