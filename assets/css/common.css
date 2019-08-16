@@ -1232,7 +1232,8 @@ button {
         display: none; } }
 
 .star02Section {
-  background: url("../images/stBg-pc_w.jpg") no-repeat top center; }
+  background: url("../images/stBg-pc_w.jpg") no-repeat top center;
+  background-color: #18275c; }
   .star02Section .star-mb {
     display: none; }
   .star02Section .starWrap {
@@ -1324,14 +1325,13 @@ button {
 
 @media screen and (max-width: 1024px) {
   .star02Section {
-    background: url("../images/stBg-pc.jpg") no-repeat top center #0d1e4a;
+    background: url("../images/stBg-pc.jpg") no-repeat top center #18275c;
     background-size: 100%; }
     .star02Section .star-mb {
       display: none; }
     .star02Section .starWrap {
       max-width: 1024px;
-      min-height: auto;
-      padding-bottom: 48px; }
+      min-height: auto; }
       .star02Section .starWrap .star02-content .item .star-text .name {
         font-size: 32px;
         margin: 0 auto 50px; }
@@ -1353,17 +1353,14 @@ button {
       .star02Section .starWrap .star02-content .item .star-text .note {
         margin: 10px 0 0;
         font-size: 12px; }
-      .star02Section .starWrap .star02-content .item01 {
-        margin: 0 0 40px; }
-        .star02Section .starWrap .star02-content .item01 .star-text {
-          margin: 0 5% 0 0;
-          padding: 50px 0 0; }
+      .star02Section .starWrap .star02-content .item01 .star-text {
+        margin: 0 5% 0 0;
+        padding: 50px 0 0; }
       .star02Section .starWrap .star02-content .item02 {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
-        flex-direction: row-reverse;
-        margin: 0 0 40px; }
+        flex-direction: row-reverse; }
         .star02Section .starWrap .star02-content .item02 .star-text {
           margin: 0 0 0 5%;
           padding: 50px 0 0; }
@@ -1373,7 +1370,7 @@ button {
 
 @media screen and (max-width: 640px) {
   .star02Section {
-    background: url("../images/stBg-mb.jpg") no-repeat top center #0d1e4a;
+    background: url("../images/stBg-mb.jpg") no-repeat top center #18275c;
     background-size: 100%; }
     .star02Section .starWrap {
       margin: 0 auto; }
@@ -1384,58 +1381,62 @@ button {
         .star02Section .starWrap .star02-content .star-mb {
           display: block; }
         .star02Section .starWrap .star02-content .item01 {
-          padding-top: 40px; }
+          margin: 0; }
           .star02Section .starWrap .star02-content .item01 .star-text {
-            padding-top: 40px; }
+            padding-top: 170px;
+            right: 0; }
         .star02Section .starWrap .star02-content .item02 {
-          padding-top: 104px; }
+          margin: 0; }
           .star02Section .starWrap .star02-content .item02 .star-text {
-            padding-top: 104px; }
-        .star02Section .starWrap .star02-content .item03 {
-          padding-top: 100px; }
-          .star02Section .starWrap .star02-content .item03 .star-text {
-            padding-top: 100px; }
-        .star02Section .starWrap .star02-content .item .star-pic .star-pc {
-          display: none; }
-        .star02Section .starWrap .star02-content .item .star-pic .star-mb {
-          display: block; }
-        .star02Section .starWrap .star02-content .item .star-text {
-          color: #fff;
-          max-width: 350px;
-          padding-bottom: 30px; }
-          .star02Section .starWrap .star02-content .item .star-text .name {
-            font-size: 20px;
-            font-weight: bold;
-            padding-bottom: 45px;
-            text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
-            margin: 0 auto; }
-            .star02Section .starWrap .star02-content .item .star-text .name span {
-              display: inline-block;
-              position: relative; }
-              .star02Section .starWrap .star02-content .item .star-text .name span:after {
-                content: '';
-                display: block;
-                position: absolute;
-                top: -35px;
-                right: -40px;
-                width: 85px;
-                height: 91px;
-                background: url("../images/star-title.png") no-repeat center;
-                background-size: 100%; }
-          .star02Section .starWrap .star02-content .item .star-text p {
-            font-size: 15px;
-            line-height: 1.5;
-            text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6); }
-          .star02Section .starWrap .star02-content .item .star-text .star-label {
-            margin: 30px 0 5px -12px;
-            width: 105%; }
-          .star02Section .starWrap .star02-content .item .star-text .star-pc {
-            display: none; }
-          .star02Section .starWrap .star02-content .item .star-text .star-mb {
-            display: block; }
-          .star02Section .starWrap .star02-content .item .star-text .note {
-            margin: 30px 0 0;
-            font-size: 13px; }
+            padding-top: 230px;
+            left: 0; }
+        .star02Section .starWrap .star02-content .item03 .star-text {
+          padding-top: 200px;
+          right: 0; }
+        .star02Section .starWrap .star02-content .item {
+          position: relative; }
+          .star02Section .starWrap .star02-content .item .star-pic {
+            z-index: -999;
+            width: 100%; }
+            .star02Section .starWrap .star02-content .item .star-pic .star-pc {
+              display: none; }
+            .star02Section .starWrap .star02-content .item .star-pic .star-mb {
+              display: block; }
+          .star02Section .starWrap .star02-content .item .star-text {
+            color: #fff;
+            max-width: 350px;
+            padding-bottom: 30px;
+            position: absolute; }
+            .star02Section .starWrap .star02-content .item .star-text .name {
+              font-size: 20px;
+              font-weight: bold;
+              padding-bottom: 45px;
+              text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
+              margin: 0 auto; }
+              .star02Section .starWrap .star02-content .item .star-text .name span {
+                display: inline-block;
+                position: relative; }
+                .star02Section .starWrap .star02-content .item .star-text .name span:after {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  top: -35px;
+                  right: -40px;
+                  width: 85px;
+                  height: 91px;
+                  background: url("../images/star-title.png") no-repeat center;
+                  background-size: 100%; }
+            .star02Section .starWrap .star02-content .item .star-text p {
+              font-size: 14px;
+              line-height: 1.5;
+              text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6); }
+            .star02Section .starWrap .star02-content .item .star-text .star-label {
+              margin: 30px 0 5px -12px;
+              width: 105%; }
+            .star02Section .starWrap .star02-content .item .star-text .star-pc {
+              display: none; }
+            .star02Section .starWrap .star02-content .item .star-text .star-mb {
+              display: block; }
       .star02Section .starWrap .star-link {
         background: url("../images/star-linkBg.jpg") no-repeat center;
         background-size: 100%;
@@ -1444,8 +1445,9 @@ button {
         font-weight: bold;
         font-size: 18px;
         line-height: 1.25;
-        padding: 12px 0;
-        margin: 0 10%;
+        padding: 8px 0;
+        max-width: 320px;
+        margin: 0 auto;
         color: #0a153e;
         display: block; }
         .star02Section .starWrap .star-link:after {
@@ -1464,14 +1466,14 @@ button {
   background: url("../images/vipBg-pc_w.jpg") no-repeat top center;
   font-family: 'Microsoft JhengHei', '微軟正黑體';
   padding-bottom: 140px; }
+  .vipSection .title-pc {
+    display: block; }
+  .vipSection .title-mb {
+    display: none; }
   .vipSection .vipContainer .sec-title {
     padding: 224px 0 110px;
     max-width: 1092px;
     margin: 0 auto; }
-    .vipSection .vipContainer .sec-title .title-pc {
-      display: block; }
-    .vipSection .vipContainer .sec-title .title-mb {
-      display: none; }
   .vipSection .vipContainer .owl-carousel .owl-item {
     -webkit-transform: scale(0.7);
     -webkit-transition: 500ms;
@@ -1530,6 +1532,17 @@ button {
           color: #c3ab7f;
           font-family: Futura; }
 
+@media screen and (max-width: 640px) {
+  .vipSection {
+    background: url("../images/vipBg-mb.jpg") no-repeat top center; }
+    .vipSection .title-pc {
+      display: none; }
+    .vipSection .title-mb {
+      display: block; }
+    .vipSection .sec-title {
+      margin: 0 auto;
+      padding: 0 1.2rem; } }
+
 .momSection {
   background: url(../images/momBg-pc_w.jpg) no-repeat bottom center;
   padding-bottom: 87px; }
@@ -1549,10 +1562,11 @@ button {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
     .momSection .momContainer .serviceWrapper div {
-      padding-bottom: 55px; }
+      padding: 0 3% 55px; }
       .momSection .momContainer .serviceWrapper div img {
         padding-bottom: 23px; }
       .momSection .momContainer .serviceWrapper div p {

@@ -2,18 +2,24 @@
     background: url('../images/vipBg-pc_w.jpg') no-repeat top center;
     font-family: 'Microsoft JhengHei', '微軟正黑體';
     padding-bottom: 140px;
+    .title-pc {
+        display: block;
+    }
+    .title-mb {
+        display: none;
+    }
     .vipContainer {
         .sec-title {
             padding: 224px 0 110px;
             max-width: 1092px;
             margin: 0 auto;
 
-            .title-pc {
-                display: block;
-            }
-            .title-mb {
-                display: none;
-            }
+            // .title-pc {
+            //     display: block;
+            // }
+            // .title-mb {
+            //     display: none;
+            // }
         }
 
         .owl-carousel {
@@ -83,6 +89,22 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .vipSection {
+        background: url('../images/vipBg-mb.jpg') no-repeat top center;
+        .title-pc {
+            display: none;
+        }
+        .title-mb {
+            display: block;
+        }
+        .sec-title {
+            margin: 0 auto;
+            padding: 0 1.2rem;
         }
     }
 }

@@ -223,6 +223,7 @@
 
 .star02Section {
     background: url('../images/stBg-pc_w.jpg') no-repeat top center;
+    background-color: #18275c;
     .star-mb {
         display: none;
     }
@@ -339,7 +340,7 @@
 // view 1024
 @media screen and (max-width: 1024px) {
     .star02Section {
-        background: url('../images/stBg-pc.jpg') no-repeat top center #0d1e4a;
+        background: url('../images/stBg-pc.jpg') no-repeat top center #18275c;
         background-size: 100%;
         .star-mb {
             display: none;
@@ -347,7 +348,7 @@
         .starWrap {
             max-width: 1024px;
             min-height: auto;
-            padding-bottom: 48px;
+            // padding-bottom: 48px;
             .star02-content {
                 .item {
                     .star-text {
@@ -383,7 +384,7 @@
                     }
                 }
                 .item01 {
-                    margin: 0 0 40px;
+                    // margin: 0 0 40px;
                     .star-text {
                         margin: 0 5% 0 0;
                         padding: 50px 0 0;
@@ -391,7 +392,7 @@
                 }
                 .item02 {
                     flex-direction: row-reverse;
-                    margin: 0 0 40px;
+                    // margin: 0 0 40px;
                     .star-text {
                         margin: 0 0 0 5%;
                         padding: 50px 0 0;
@@ -410,7 +411,7 @@
 // mobile layout
 @media screen and (max-width: 640px) {
     .star02Section {
-        background: url('../images/stBg-mb.jpg') no-repeat top center #0d1e4a;
+        background: url('../images/stBg-mb.jpg') no-repeat top center #18275c;
         background-size: 100%;
         .starWrap {
             margin: 0 auto;
@@ -423,26 +424,35 @@
                     display: block;
                 }
                 .item01 {
-                    padding-top: 40px;
+                    margin: 0;
+                    .star-pic {
+                        // z-index: -999;
+                        // width: 100%;
+                    }
                     .star-text {
-                        padding-top: 40px;
+                        padding-top: 170px;
+                        right: 0;
                     }
                 }
                 .item02 {
-                    padding-top: 104px;
+                    margin: 0;
                     .star-text {
-                        padding-top: 104px;
+                        padding-top: 230px;
+                        left: 0;
                     }
                 }
                 .item03 {
-                    padding-top: 100px;
                     .star-text {
-                        padding-top: 100px;
+                        padding-top: 200px;
+                        right: 0;
                     }
                 }
 
                 .item {
+                    position: relative;
                     .star-pic {
+                        z-index: -999;
+                        width: 100%;
                         .star-pc {
                             display: none;
                         }
@@ -454,6 +464,8 @@
                         color: #fff;
                         max-width: 350px;
                         padding-bottom: 30px;
+                        position: absolute;
+
                         .name {
                             font-size: 20px;
                             font-weight: bold;
@@ -477,7 +489,7 @@
                             }
                         }
                         p {
-                            font-size: 15px;
+                            font-size: 14px;
                             line-height: 1.5;
                             text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
                         }
@@ -491,11 +503,6 @@
                         .star-mb {
                             display: block;
                         }
-
-                        .note {
-                            margin: 30px 0 0;
-                            font-size: 13px;
-                        }
                     }
                 }
             }
@@ -508,8 +515,9 @@
                 font-weight: bold;
                 font-size: 18px;
                 line-height: 1.25;
-                padding: 12px 0;
-                margin: 0 10%;
+                padding: 8px 0;
+                max-width: 320px;
+                margin: 0 auto;
                 color: #0a153e;
                 display: block;
                 &:after {
