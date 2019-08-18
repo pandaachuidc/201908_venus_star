@@ -13,15 +13,8 @@
             padding: 224px 0 110px;
             max-width: 1092px;
             margin: 0 auto;
-
-            // .title-pc {
-            //     display: block;
-            // }
-            // .title-mb {
-            //     display: none;
-            // }
         }
-
+/*
         .owl-carousel {
             .owl-item {
                 -webkit-transform: scale(0.7);
@@ -42,7 +35,7 @@
             .owl-nav {
                 width: 100%;
                 margin: -90px auto 0;
-                max-width: 1094px;
+                max-width: 1000px;
                 position: relative;
                 display: flex;
                 justify-content: space-between;
@@ -58,6 +51,7 @@
                     text-decoration: none;
                 }
                 a {
+                    width: 80%;
                     display: block;
                     text-decoration: none;
                     .vip-img {
@@ -90,8 +84,104 @@
                 }
             }
         }
+        */
     }
 }
+
+.vip-item img {
+    -webkit-box-shadow: #081737 10px 10px 30px;
+    box-shadow: #081737 10px 10px 30px;
+    margin: 50px 0;
+}
+
+
+.vip-item .owl-item {
+    -webkit-transform: scale(0.7);
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+   
+    .vip-text {
+        display: none; //文字只有中間會顯示
+        
+    }
+}
+
+
+.vip-item .center {
+    -webkit-transform: scale(1);
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    .vip-text {
+        display: block !important; //文字只有中間會顯示
+        
+    }
+}
+
+.vip-item .owl-nav {
+    width: 100%;
+    margin: -100px auto 0;
+    max-width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vip-item .owl-dots {
+    display: none;
+}
+
+.vip-item img {
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    &:hover {
+        -webkit-transition: 500ms;
+        -o-transition: 500ms;
+        transition: 500ms;
+        -webkit-transform: scale(0.95);
+        text-decoration: none;
+    }
+}
+
+
+    .vip-item{
+        a {
+            width: 80%;
+            // display: block;
+            text-decoration: none;
+            
+            .vip-img {
+                img {
+                    -webkit-box-shadow: #081737 10px 10px 30px;
+                    box-shadow: #081737 10px 10px 30px;
+                }
+            }
+            .vip-text {
+                .name {
+                    color: #c3ab7f;
+                    font-size: 30px;
+                    padding: 47px 0 27px 0;
+                }
+                .contentWrapper {
+                    font-size: 20px;
+                    border-left: #ffffff 1px solid;
+                    padding-left: 20px;
+                    p {
+                        color: #ffffff;
+                        line-height: 30px;
+                        padding-bottom: 20px;
+                    }
+                    span {
+                        color: #c3ab7f;
+                        font-family: Futura;
+                    }
+                }
+            }
+        }
+    }
+
 
 @media screen and (max-width: 640px) {
     .vipSection {
