@@ -57,9 +57,9 @@
         .kv-gift {
             display: flex;
             justify-content: space-between;
-            margin: 0 0 40px;
+            margin-bottom: 30px;
             .kv-giftbox {
-                position: relative;
+                // position: relative;
                 background: rgba(255, 255, 255, 0.1);
                 padding: 30px 15px;
                 font-family: '微軟正黑體';
@@ -96,6 +96,16 @@
             }
         }
     }
+    // // 錨點改變位置
+    // #kvform {
+    //     &:before {
+    //         content: '';
+    //         display: block;
+    //         margin-top: -80px;
+    //         height: 80px;
+    //         visibility: hidden;
+    //     }
+    // }
 }
 
 @media screen and (max-width: 1600px) {
@@ -206,29 +216,33 @@
             }
             .kv-gift {
                 flex-wrap: wrap;
-                margin: 0 auto 0px;
+                margin: 0 auto;
+                .kv-giftbox_01 {
+                    text-align: left;
+                    line-height: 18px;
+                }
                 .kv-giftbox {
                     width: 100%;
-                    max-width: 400px;
                     font-family: '微軟正黑體';
                     font-family: '微軟正黑體' \0; //for ie
                     font-size: 18px;
                     padding: 15px;
                     margin: 0 auto 20px;
+
                     .giftbox_title {
                         font-size: 22px;
-                        margin: 0 0 15px;
+                        padding: 10px 0;
                     }
                     .giftbox_line {
                         .note {
                             font-size: 14px;
                         }
                     }
-                    .gift_dyson {
+                    .gift_philia {
                         position: absolute;
-                        right: -25px;
-                        bottom: -30px;
-                        width: 27.5%;
+                        right: 50px;
+                        bottom: -10px;
+                        width: 20%;
                     }
                 }
             }
@@ -237,9 +251,37 @@
 }
 // iphone XS Max, Plus
 @media screen and (max-width: 414px) {
+    .kvSection {
+        .kv-form {
+            .kv-gift {
+                .kv-giftbox {
+                    .giftbox_title {
+                        font-size: 20px;
+                    }
+                    .gift_philia {
+                        position: absolute;
+                        right: 10px;
+                        bottom: -10px;
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
 }
 // iphone XS, iphone X
 @media screen and (max-width: 375px) {
+    .kvSection {
+        .kv-form {
+            .kv-gift {
+                .kv-giftbox {
+                    .giftbox_title {
+                        font-size: 17.5px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .kv-formbox {

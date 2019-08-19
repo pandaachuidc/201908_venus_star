@@ -66,3 +66,21 @@
         }
     }
 }
+
+// mobile layout
+@media screen and (max-width: 640px) {
+    .momSection {
+        .momContainer {
+            .sec-title {
+                margin: 0 auto;
+                padding: 120px 1.2rem 80px;
+                .title-pc {
+                    display: none;
+                }
+                .title-mb {
+                    display: block;
+                }
+            }
+        }
+    }
+}

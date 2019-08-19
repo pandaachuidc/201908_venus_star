@@ -539,4 +539,92 @@
 }
 
 @media screen and (max-width: 375px) {
+    .star02Section {
+        .starWrap {
+            .star02-content {
+                .item01 {
+                    .star-pic {
+                    }
+                    .star-text {
+                        padding-top: 30px;
+                        right: 0;
+                    }
+                }
+                .item02 {
+                    .star-text {
+                        padding-top: 80px;
+                    }
+                }
+                .item03 {
+                    .star-text {
+                        padding-top: 100px;
+                    }
+                }
+
+                .item {
+                    position: relative;
+                    .star-pic {
+                        z-index: -999;
+                        width: 100%;
+                        .star-pc {
+                            display: none;
+                        }
+                        .star-mb {
+                            display: block;
+                        }
+                    }
+                    .star-text {
+                        color: #fff;
+                        max-width: 350px;
+                        padding-bottom: 30px;
+                        position: absolute;
+
+                        .name {
+                            font-size: 20px;
+                            font-weight: bold;
+                            padding-bottom: 45px;
+                            text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
+                            margin: 0 auto;
+                            span {
+                                display: inline-block;
+                                position: relative;
+                                &:after {
+                                    content: '';
+                                    display: block;
+                                    position: absolute;
+                                    top: -35px;
+                                    right: -40px;
+                                    width: 85px;
+                                    height: 91px;
+                                    background: url('../images/star-title.png') no-repeat center;
+                                    background-size: 100%;
+                                }
+                            }
+                        }
+                        p {
+                            font-size: 14px;
+                            line-height: 1.5;
+                            text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
+                        }
+                        .star-label {
+                            margin: 30px 0 5px -12px;
+                            width: 105%;
+                        }
+                        .star-pc {
+                            display: none;
+                        }
+                        .star-mb {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .star-link {
+                font-size: 16px;
+                line-height: 16px;
+                max-width: 280px;
+            }
+        }
+    }
 }
