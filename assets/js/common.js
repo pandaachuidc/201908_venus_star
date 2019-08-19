@@ -80,8 +80,8 @@ $(function() {
                 autoplayHoverPause: false,
             },
         },
-        dots: false,
-        nav: true,
+        // dots: false,
+        // nav: true,
         navText: [
             "<img src='assets/images/vip-button-prev.png'>",
             "<img src='assets/images/vip-button-next.png'>",

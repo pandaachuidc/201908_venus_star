@@ -14,15 +14,14 @@
             max-width: 1092px;
             margin: 0 auto;
         }
-        /*
+
         .owl-carousel {
             .item {
-                width: 85%;
-                margin: 0 auto;
-                cursor: pointer;
                 a {
                     text-decoration: none;
-
+                    width: 85%;
+                    margin: 0 auto;
+                    cursor: pointer;
                     .vip-img {
                         img {
                             @include box-shadow;
@@ -77,7 +76,11 @@
                 transition: 500ms;
 
                 .vip-text {
-                    display: none; //文字只有中間會顯示
+                    //display: none; //文字只有中間會顯示<--空間消失，上面的圖片往下掉，造成動畫不流暢
+                    opacity: 0; //文字只有中間會顯示
+                    -webkit-transform: scale(0.7);
+                    -webkit-transition: 500ms;
+                    transition: 500ms;
                 }
             }
             .center {
@@ -86,20 +89,27 @@
                 -o-transition: 500ms;
                 transition: 500ms;
                 .vip-text {
-                    display: block !important; //文字只有中間會顯示
+                    //display: block !important; //文字只有中間會顯示
+                    opacity: 1;
+                    -webkit-transform: scale(1);
+                    -webkit-transition: 500ms;
+                    transition: 500ms;
                 }
             }
             .owl-nav {
+                display: block;
                 margin: -140px 10% 0;
                 position: relative;
                 display: flex;
                 justify-content: space-between;
             }
+            .owl-dots {
+                display: none;
+            }
         }
-        */
     }
 }
-
+/*
 .vip-item img {
     width: 85%;
     margin: 50px 0;
@@ -109,9 +119,12 @@
     -webkit-transform: scale(0.7);
     -webkit-transition: 500ms;
     transition: 500ms;
-
     .vip-text {
-        display: none; //文字只有中間會顯示
+        //display: none; //文字只有中間會顯示<--空間消失，上面的圖片往下掉，造成動畫不流暢
+        opacity: 0; //文字只有中間會顯示
+        -webkit-transform: scale(0.7);
+        -webkit-transition: 500ms;
+        transition: 500ms;
     }
 }
 
@@ -120,7 +133,11 @@
     -webkit-transition: 500ms;
     transition: 500ms;
     .vip-text {
-        display: block !important; //文字只有中間會顯示
+        //display: block !important; //文字只有中間會顯示
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -webkit-transition: 500ms;
+        transition: 500ms;
     }
 }
 
@@ -189,55 +206,55 @@
         }
     }
 }
+*/
 
 // mobile layout
 @media screen and (max-width: 640px) {
     .vipSection {
         background: url('../images/vipBg-mb.jpg') no-repeat top center;
         .vipContainer {
-            .title-pc {
-                display: none;
-            }
-            .title-mb {
-                display: block;
-            }
             .sec-title {
                 margin: 0 auto;
                 padding: $sec-title-padding-640;
             }
-        }
-    }
 
-    .vip-item img {
-        margin: 50px 0;
-    }
-
-    .vip-item .owl-item {
-        // -webkit-transform: scale(0.7);
-        // -webkit-transition: 500ms;
-        // -o-transition: 500ms;
-        // transition: 500ms;
-
-        .vip-text {
-            display: none; //文字只有中間會顯示
-        }
-    }
-
-    .vip-item .owl-nav {
-        margin: -250px auto 0;
-        max-width: 500px;
-    }
-
-    .vip-item {
-        .item {
-            width: 50%;
-            margin: 0 auto;
-            padding-bottom: 120px;
-            a {
-                .vip-text {
-                    .name {
-                        padding: 0 0 27px 0;
+            .owl-carousel {
+                .item {
+                    width: 50%;
+                    margin: 0 auto;
+                    padding-bottom: 120px;
+                    a {
+                        .vip-text {
+                            .name {
+                                padding: 0 0 27px 0;
+                            }
+                        }
                     }
+                }
+                .owl-dots {
+                    display: block;
+                    background: transparent;
+                    span {
+                        width: 10px;
+                        height: 10px;
+                        margin: 8px 8px;
+                        background: #ddab9e;
+
+                        display: block;
+                        -webkit-backface-visibility: visible;
+                        transition: opacity 0.2s ease;
+                        -webkit-border-radius: 500px;
+                        border-radius: 500px;
+                    }
+                }
+                .owl-dot.active span {
+                    /* background: #869791; */
+                    filter: alpha(opacity=100);
+                    opacity: 1;
+                    background: #73495c;
+                }
+                .owl-nav {
+                    display: none;
                 }
             }
         }
