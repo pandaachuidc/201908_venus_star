@@ -73,13 +73,33 @@
         .momContainer {
             .sec-title {
                 margin: 0 auto;
-                padding: 120px 1.2rem 80px;
+                padding: $sec-title-padding-640;
                 .title-pc {
                     display: none;
                 }
                 .title-mb {
                     display: block;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .momSection {
+        .momContainer {
+            .sec-title {
+                padding: $sec-title-padding-414;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .momSection {
+        .momContainer {
+            .sec-title {
+                padding: $sec-title-padding-375;
             }
         }
     }

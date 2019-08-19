@@ -50,6 +50,15 @@ $(function() {
         autoplaySpeed: 500,
         autoplayTimeout: 2000,
         responsive: {
+            360: {
+                items: 1,
+                autoplayHoverPause: true,
+            },
+            375: {
+                items: 1,
+                autoplayHoverPause: true,
+            },
+            // add
             414: {
                 items: 1,
                 autoplayHoverPause: true,

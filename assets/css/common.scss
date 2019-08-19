@@ -98,7 +98,7 @@ html {
 body {
     font-family: 'Noto Sans TC', 'Source Sans Pro', 'Microsoft JhengHei', '微軟正黑體', sans-serif;
     font-family: '微軟正黑體' \0; //for ie
-    font-size: 16px;//使用rem統一
+    font-size: 16px; //使用rem統一
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: normal;
@@ -186,6 +186,26 @@ button {
 .swiper-pagination {
     position: relative;
 }
+
+// --------------- common CSS ---------------
+//shadow
+@mixin box-shadow {
+    -webkit-box-shadow: #081737 10px 10px 30px;
+    box-shadow: #081737 10px 10px 30px;
+}
+
+//sec-title 640
+$sec-title-padding-640: 120px 1.2rem 50px;
+
+//sec-title 414
+$sec-title-padding-414: 120px 2rem 50px;
+
+//sec-title 375
+$sec-title-padding-375: 120px 2.2rem 50px;
+//sec-title 360
+$sec-title-padding-360: 120px 2.2rem 50px;
+
+// --------------- different layout size ---------------
 
 // pad layout
 @media screen and (max-width: 768px) {
