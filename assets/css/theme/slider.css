@@ -1,82 +1,90 @@
-.s5 {
-  padding-bottom: 170px; }
-
-.s5_cnt img {
-  width: 80%;
-  -webkit-box-shadow: #081737 0px 10px 30px;
-  box-shadow: #081737 0px 10px 30px;
-  margin: 50px auto; }
-
-.s5 .tit {
-  margin-bottom: 30px; }
-
-.s5_cnt .owl-item {
-  -webkit-transform: scale(0.7);
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms; }
-
-.s5_cnt .center {
-  -webkit-transform: scale(1);
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms; }
-
-.s5_cnt .owl-nav {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1000px;
-  position: relative; }
-
-.s5_cnt .owl-dots {
-  display: none; }
-
-.s5_cnt img,
-.s6_cnt a {
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms;
-  color: #666; }
-
-.s5_cnt img:hover,
-.s6_cnt a:hover {
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms;
-  -webkit-transform: scale(0.95);
-  text-decoration: none;
-  color: #666; }
-
-@media (max-width: 1281px) {
-  .s5_cnt img {
-    width: 100%; } }
-
-@media (max-width: 1025px) {
-  .s5_cnt .owl-nav {
-    max-width: 500px; } }
-
-@media (max-width: 801px) {
-  .s5_cnt {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto; }
-  .s5 .tit {
-    margin-bottom: 0px; } }
-
-@media (max-width: 641px) {
-  .s5_cnt img {
-    width: 80%; }
-  .s5_cnt .owl-dots {
+@charset "UTF-8";
+.vipSection {
+  background: url("../images/vipBg-pc_w.jpg") no-repeat top center;
+  font-family: 'Microsoft JhengHei', '微軟正黑體';
+  padding-bottom: 140px; }
+  .vipSection .title-pc {
     display: block; }
-  .s5_cnt .owl-nav {
+  .vipSection .title-mb {
     display: none; }
-  .s5_cnt img {
-    margin-bottom: 40px;
-    margin-top: 40px; }
-  .s5 {
-    padding-bottom: 70px; } }
-
-@media (max-width: 415px) {
-  .s5 {
-    margin-top: -80%; } }
+  .vipSection .vipContainer .sec-title {
+    padding: 224px 0 110px;
+    max-width: 1092px;
+    margin: 0 auto; }
+  .vipSection .vipContainer .owl-carousel .item {
+    text-decoration: none;
+    width: 80%;
+    margin: 0 auto; }
+    .vipSection .vipContainer .owl-carousel .item .slider {
+      text-decoration: none;
+      width: 85%;
+      margin: 0 auto;
+      cursor: pointer; }
+    .vipSection .vipContainer .owl-carousel .item .vip-img img {
+      margin: 50px 0;
+      -webkit-transition: 500ms;
+      -o-transition: 500ms;
+      transition: 500ms; }
+      .vipSection .vipContainer .owl-carousel .item .vip-img img:hover {
+        -webkit-transition: 500ms;
+        -o-transition: 500ms;
+        transition: 500ms;
+        -webkit-transform: scale(0.95);
+        text-decoration: none; }
+    .vipSection .vipContainer .owl-carousel .item .vip-text .name {
+      color: #c3ab7f;
+      font-size: 30px;
+      padding: 47px 0 27px 0; }
+    .vipSection .vipContainer .owl-carousel .item .vip-text .contentWrapper {
+      font-size: 20px;
+      border-left: #ffffff 1px solid;
+      padding-left: 20px; }
+      .vipSection .vipContainer .owl-carousel .item .vip-text .contentWrapper p {
+        display: block;
+        width: 100%;
+        color: #ffffff;
+        line-height: 30px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical; }
+      .vipSection .vipContainer .owl-carousel .item .vip-text .contentWrapper span {
+        color: #c3ab7f;
+        font-family: Futura; }
+  .vipSection .vipContainer .owl-carousel .owl-item {
+    -webkit-transform: scale(0.5);
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms; }
+    .vipSection .vipContainer .owl-carousel .owl-item .vip-text {
+      display: none;
+      -webkit-transform: scale(0.5);
+      -webkit-transition: 500ms;
+      -o-transition: 500ms;
+      transition: 500ms; }
+  .vipSection .vipContainer .owl-carousel .center {
+    -webkit-transform: scale(1);
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms; }
+    .vipSection .vipContainer .owl-carousel .center .vip-text {
+      display: block !important;
+      -webkit-transform: scale(1);
+      -webkit-transition: 500ms;
+      -o-transition: 500ms;
+      transition: 500ms; }
+  .vipSection .vipContainer .owl-carousel .owl-nav {
+    display: block;
+    margin: -140px 10% 0;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .vipSection .vipContainer .owl-carousel .owl-dots {
+    display: none; }
