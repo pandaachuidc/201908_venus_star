@@ -1722,23 +1722,28 @@ button {
 @media screen and (max-width: 640px) {
   .vipSection {
     background: url("../images/vipBg-mb.jpg") no-repeat top center; }
+    .vipSection .title-pc {
+      display: none; }
+    .vipSection .title-mb {
+      display: block; }
     .vipSection .vipContainer .sec-title {
       margin: 0 auto;
       padding: 120px 1.2rem 50px; }
     .vipSection .vipContainer .owl-carousel .item {
       width: 50%;
       margin: 0 auto;
-      padding-bottom: 120px; }
+      padding-bottom: 40px; }
+      .vipSection .vipContainer .owl-carousel .item a .vip-img img {
+        margin: 30px 0; }
       .vipSection .vipContainer .owl-carousel .item a .vip-text .name {
         padding: 0 0 27px 0; }
     .vipSection .vipContainer .owl-carousel .owl-dots {
-      display: block;
-      background: transparent; }
-      .vipSection .vipContainer .owl-carousel .owl-dots span {
+      display: block; }
+      .vipSection .vipContainer .owl-carousel .owl-dots .owl-dot span {
         width: 10px;
         height: 10px;
         margin: 8px 8px;
-        background: #ddab9e;
+        background: #444480;
         display: block;
         -webkit-backface-visibility: visible;
         -webkit-transition: opacity 0.2s ease;
@@ -1747,10 +1752,9 @@ button {
         -webkit-border-radius: 500px;
         border-radius: 500px; }
     .vipSection .vipContainer .owl-carousel .owl-dot.active span {
-      /* background: #869791; */
       filter: alpha(opacity=100);
       opacity: 1;
-      background: #73495c; }
+      background: #32325f; }
     .vipSection .vipContainer .owl-carousel .owl-nav {
       display: none; } }
 

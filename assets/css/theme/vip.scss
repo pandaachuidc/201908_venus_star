@@ -212,6 +212,12 @@
 @media screen and (max-width: 640px) {
     .vipSection {
         background: url('../images/vipBg-mb.jpg') no-repeat top center;
+        .title-pc {
+            display: none;
+        }
+        .title-mb {
+            display: block;
+        }
         .vipContainer {
             .sec-title {
                 margin: 0 auto;
@@ -222,8 +228,13 @@
                 .item {
                     width: 50%;
                     margin: 0 auto;
-                    padding-bottom: 120px;
+                    padding-bottom: 40px;
                     a {
+                        .vip-img {
+                            img {
+                                margin: 30px 0;
+                            }
+                        }
                         .vip-text {
                             .name {
                                 padding: 0 0 27px 0;
@@ -231,27 +242,31 @@
                         }
                     }
                 }
+
+                $dots-colors: (#32325f);
                 .owl-dots {
                     display: block;
-                    background: transparent;
-                    span {
-                        width: 10px;
-                        height: 10px;
-                        margin: 8px 8px;
-                        background: #ddab9e;
 
-                        display: block;
-                        -webkit-backface-visibility: visible;
-                        transition: opacity 0.2s ease;
-                        -webkit-border-radius: 500px;
-                        border-radius: 500px;
+                    .owl-dot {
+                        span {
+                            width: 10px;
+                            height: 10px;
+                            margin: 8px 8px;
+                            background: lighten($dots-colors, 10%);
+
+                            display: block;
+                            -webkit-backface-visibility: visible;
+                            transition: opacity 0.2s ease;
+                            -webkit-border-radius: 500px;
+                            border-radius: 500px;
+                        }
                     }
                 }
+                //當前slider的owl-dot 顏色
                 .owl-dot.active span {
-                    /* background: #869791; */
                     filter: alpha(opacity=100);
                     opacity: 1;
-                    background: #73495c;
+                    background: $dots-colors;
                 }
                 .owl-nav {
                     display: none;
