@@ -1833,11 +1833,12 @@ button {
       .momSection .momContainer .serviceWrapper div p {
         color: #d0b685;
         font-family: 'Microsoft JhengHei', '微軟正黑體';
-        font-size: 22;
+        font-size: 22px;
         text-align: center;
         line-height: 1.5; }
-        .momSection .momContainer .serviceWrapper div p span {
-          font-weight: bold; }
+        .momSection .momContainer .serviceWrapper div p b {
+          font-weight: bold;
+          display: block; }
   .momSection .momContainer a {
     background: url("../images/star-linkBg.jpg") no-repeat center;
     background-size: 100%;
