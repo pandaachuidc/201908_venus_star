@@ -654,7 +654,29 @@
     }
 }
 @media screen and (max-width: 640px) {
-    .modal-dialog {
-        margin: 50px auto;
+    .modal-body {
+        max-width: 700px;
+        margin: 50px 1.2rem;
+        .vipModalWrap {
+            padding-left: 2.8rem;
+            padding-right: 2.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .modal-body {
+        .vipModalWrap {
+            padding: 50px 2.8rem ;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .modal-body {
+        .vipModalWrap {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
     }
 }

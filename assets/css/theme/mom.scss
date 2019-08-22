@@ -47,7 +47,7 @@
             letter-spacing: 0.1em;
             font-weight: bold;
             font-size: 24px;
-            line-height: 1.25;
+            line-height: 2;
             padding: 12px 0;
             color: #0a153e;
             display: block;
@@ -92,16 +92,35 @@
             .sec-title {
                 padding: $sec-title-padding-414;
             }
+            a{
+                max-width: 320px;
+             }
         }
     }
 }
 
 @media screen and (max-width: 375px) {
     .momSection {
+   
         .momContainer {
             .sec-title {
                 padding: $sec-title-padding-375;
+               
             }
-        }
+            .serviceWrapper {
+                max-width: 300px;
+                div {
+                    padding: 0 3% 55px;
+                    width: 50%;
+                }
+            }
+            a {
+                max-width: 300px;
+                }
+            }
+        
     }
 }
+
+
+
