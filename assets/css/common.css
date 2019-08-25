@@ -540,7 +540,7 @@ button {
   display: none; }
 
 .kvSection {
-  background-color: #09153e; }
+  background-color: #050e2a; }
   .kvSection .kv {
     width: 100%;
     position: relative; }
@@ -575,8 +575,9 @@ button {
   .kvSection .kv-form {
     background: url("../images/kvbg-pc_w.jpg") no-repeat top center;
     background-size: 100%;
+    background-color: #050e2a;
     margin: 0 auto;
-    padding: 0 2.5rem 180px;
+    padding: 0 2.5rem 205px;
     position: relative;
     z-index: 1; }
     .kvSection .kv-form .kv-formwrap {
@@ -1330,9 +1331,20 @@ button {
             .star02Section .starWrap .star02-content .item .star-text .star-link:hover {
               text-decoration: none;
               opacity: 0.8; }
-          .star02Section .starWrap .star02-content .item .star-text .note {
-            margin: 30px 0 0;
-            font-size: 13px; }
+      .star02Section .starWrap .star02-content .note {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .star02Section .starWrap .star02-content .note p {
+          padding: 10px 0 10px;
+          font-size: 13px;
+          color: #fff;
+          position: absolute;
+          z-index: 1;
+          bottom: 25px; }
       .star02Section .starWrap .star02-content .item01 .star-text {
         max-width: 486px;
         padding-top: 156px; }
@@ -1396,7 +1408,9 @@ button {
         padding: 100px 0 0; } }
 
 @media screen and (max-width: 767px) {
-  .star02Section .starWrap .star02-content .item01 .star-text, .star02Section .starWrap .star02-content .item02 .star-text, .star02Section .starWrap .star02-content .item03 .star-text {
+  .star02Section .starWrap .star02-content .item01 .star-text,
+  .star02Section .starWrap .star02-content .item02 .star-text,
+  .star02Section .starWrap .star02-content .item03 .star-text {
     padding-top: 60px; } }
 
 @media screen and (max-width: 640px) {
@@ -1496,7 +1510,8 @@ button {
 @media screen and (max-width: 414px) {
   .star02Section .starWrap .star02-content .item01 .star-text {
     padding-top: 40px; }
-  .star02Section .starWrap .star02-content .item02 .star-text, .star02Section .starWrap .star02-content .item03 .star-text {
+  .star02Section .starWrap .star02-content .item02 .star-text,
+  .star02Section .starWrap .star02-content .item03 .star-text {
     padding-top: 100px; } }
 
 @media screen and (max-width: 375px) {

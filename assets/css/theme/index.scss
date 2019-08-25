@@ -1,5 +1,5 @@
 .kvSection {
-    background-color: #09153e;
+    background-color: #050e2a;
     .kv {
         width: 100%;
         position: relative;
@@ -44,8 +44,9 @@
     .kv-form {
         background: url('../images/kvbg-pc_w.jpg') no-repeat top center;
         background-size: 100%;
+        background-color: #050e2a;
         margin: 0 auto;
-        padding: 0 2.5rem 180px; //180px為背景下方調整
+        padding: 0 2.5rem 205px; //180px為背景下方調整
         position: relative;
         z-index: 1;
         .kv-formwrap {
