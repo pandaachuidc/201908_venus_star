@@ -1,5 +1,5 @@
 .kvSection {
-    background-color: #050e2a;
+    background-color: #05143a;
     .kv {
         width: 100%;
         position: relative;
@@ -44,7 +44,7 @@
     .kv-form {
         background: url('../images/kvbg-pc_w.jpg') no-repeat top center;
         background-size: 100%;
-        background-color: #050e2a;
+        background-color: #05143a;
         margin: 0 auto;
         padding: 0 2.5rem 180px; //180px為背景下方調整
         position: relative;
@@ -112,6 +112,7 @@
         .kv-form {
             background: url('../images/kvbg-pc.jpg') no-repeat top center;
             background-size: 100%;
+            background-color: #05143a;
         }
     }
 }
@@ -201,7 +202,7 @@
             background-color: #051439;
             background-size: 100%;
             margin: 0 auto;
-            padding: 0 1.2rem 50px;
+            padding: 0 1.2rem 180px;
             .kv-formwrap {
                 box-shadow: 0px 0px 25px 0px rgba(0, 8, 36, 1);
                 padding: 20px;
@@ -241,10 +242,17 @@
         }
     }
 }
+
+@media screen and (max-width: 640px) {
+    .kvSection {
+        background-color: #201b51;
+    }
+}
 // iphone XS Max, Plus
 @media screen and (max-width: 414px) {
     .kvSection {
         .kv-form {
+            padding-bottom: 100px;
             .kv-gift {
                 .kv-giftbox {
                     .giftbox_title {
@@ -514,6 +522,7 @@
         }
     }
 }
+
 @media screen and (max-width: 640px) {
     .kv-formbox {
         .form-content {

@@ -395,7 +395,7 @@
                                         時時推 天天推 推出妳的完美曲線
                                     </span>
                                     <div><img class="" src="assets/images/star-s-popup.jpg" /></div>
-                                    <a href="#kvform"><img src="assets/images/popup-btn.png" /></a>
+                                    <a href="#kvform" class="star-link-bnt" data-dismiss="modal"><img src="assets/images/popup-btn.png" /></a>
                                 </div>
                             </div>
                         </div>
@@ -579,7 +579,7 @@
                                         24小時穿著，也像第二層肌膚般舒服
                                     </span>
                                     <div><img class="" src="assets/images/star-1-popup.jpg" /></div>
-                                    <a href="#kvform"><img src="assets/images/popup-btn.png" /></a>
+                                    <a href="#kvform" class="star-link-bnt" data-dismiss="modal"><img src="assets/images/popup-btn.png" /></a>
                                 </div>
                             </div>
                         </div>
@@ -614,7 +614,7 @@
                                         身體曲線密碼 X 產後6個月黃金塑身期 = 雙乘效用
                                     </span>
                                     <div><img class="" src="assets/images/star-2-popup.png" /></div>
-                                    <a href="#kvform"><img src="assets/images/popup-btn.png" /></a>
+                                    <a href="#kvform" class="star-link-bnt" data-dismiss="modal"><img src="assets/images/popup-btn.png" /></a>
                                 </div>
                             </div>
                         </div>
@@ -651,7 +651,7 @@
                                         時時推 天天推 推出妳的完美曲線
                                     </span>
                                     <div><img class="" src="assets/images/star-s-popup.jpg" /></div>
-                                    <a href="#kvform"><img src="assets/images/popup-btn.png" /></a>
+                                    <a href="#kvform" class="star-link-bnt" data-dismiss="modal"><img src="assets/images/popup-btn.png" /></a>
                                 </div>
                             </div>
                         </div>
@@ -951,7 +951,7 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="serviceBtn">預約試穿/價格諮詢</a>
+                    <a href="#kvform" class="serviceBtn">預約試穿/價格諮詢</a>
                 </div>
             </div>
 
@@ -1042,6 +1042,13 @@
         <!--輪播動態js-->
         <!-- Owl Stylesheets -->
         <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <script type="text/javascript">
+   
+    $('.star-link-bnt').click(function() {
+            $('html,body').animate({ scrollTop: $('#kvform').offset().top }, 1000);
+        });
+</script>
 
         <script>
             // 表單 中英文驗證
