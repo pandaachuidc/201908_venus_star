@@ -577,7 +577,7 @@ button {
     background-size: 100%;
     background-color: #050e2a;
     margin: 0 auto;
-    padding: 0 2.5rem 205px;
+    padding: 0 2.5rem 180px;
     position: relative;
     z-index: 1; }
     .kvSection .kv-form .kv-formwrap {
@@ -629,7 +629,7 @@ button {
   .kvSection .kv .kv-pc {
     display: block; }
   .kvSection .kv-form {
-    background: url("../images/kvbg-pc.jpg") no-repeat top center #0c153f;
+    background: url("../images/kvbg-pc.jpg") no-repeat top center;
     background-size: 100%; } }
 
 @media screen and (max-width: 1440px) {
@@ -657,7 +657,7 @@ button {
     -ms-flex: 0 0 40px;
     flex: 0 0 40px; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .kvSection .kv .kv-cta {
     position: fixed;
     right: 0;
@@ -673,7 +673,8 @@ button {
   .kvSection .kv .kv-mb {
     display: block; }
   .kvSection .kv-form {
-    background: url("../images/kvbg-mb.jpg") no-repeat top center #0c153f;
+    background: url("../images/kvbg-mb.jpg") no-repeat top center;
+    background-color: #051439;
     background-size: 100%;
     margin: 0 auto;
     padding: 0 1.2rem 50px; }
@@ -735,6 +736,7 @@ button {
   color: #fff;
   margin: 0 0 25px; }
   .kv-formbox .form-content .needsWrap {
+    font-family: '微軟正黑體';
     width: 100%;
     text-align: center;
     margin: 0 0 20px; }
@@ -742,6 +744,7 @@ button {
       display: inline-block;
       margin: 0 22px 0 0; }
   .kv-formbox .form-content .form-column {
+    font-family: '微軟正黑體';
     width: 48%;
     margin: 0 0 20px; }
     .kv-formbox .form-content .form-column input {
@@ -751,21 +754,21 @@ button {
       border: 0;
       border-radius: 0;
       border-bottom: 1px solid rgba(214, 197, 255, 0.5);
-      background: #fff;
-      color: #666;
+      background: #111845;
+      color: #fff;
       width: 100%;
       font-size: 18px;
       letter-spacing: 0.05em;
       line-height: 40px;
       padding: 0 10px; }
       .kv-formbox .form-content .form-column input::-webkit-input-placeholder {
-        color: #666; }
+        color: #fff; }
       .kv-formbox .form-content .form-column input:-ms-input-placeholder {
-        color: #666; }
+        color: #fff; }
       .kv-formbox .form-content .form-column input::-ms-input-placeholder {
-        color: #666; }
+        color: #fff; }
       .kv-formbox .form-content .form-column input::placeholder {
-        color: #666; }
+        color: #fff; }
       .kv-formbox .form-content .form-column input:hover {
         border-bottom: 1px solid #d6c5ff; }
       .kv-formbox .form-content .form-column input:focus {
@@ -777,22 +780,22 @@ button {
       border: 0;
       border-radius: 0;
       border-bottom: 1px solid rgba(214, 197, 255, 0.5);
-      background: url("../images/arrow.png") no-repeat right 15px center #fff;
+      background: url("../images/arrow.png") no-repeat right 15px center #111845;
       background-size: 10px;
-      color: #666;
+      color: #fff;
       width: 100%;
       font-size: 18px;
       letter-spacing: 0.05em;
       line-height: 40px;
       padding: 0 10px; }
       .kv-formbox .form-content .form-column select::-webkit-input-placeholder {
-        color: #666; }
+        color: #fff; }
       .kv-formbox .form-content .form-column select:-ms-input-placeholder {
-        color: #666; }
+        color: #fff; }
       .kv-formbox .form-content .form-column select::-ms-input-placeholder {
-        color: #666; }
+        color: #fff; }
       .kv-formbox .form-content .form-column select::placeholder {
-        color: #666; }
+        color: #fff; }
       .kv-formbox .form-content .form-column select:hover {
         border-bottom: 1px solid #d6c5ff; }
       .kv-formbox .form-content .form-column select:focus {
@@ -802,7 +805,8 @@ button {
       font-family: 'KozGoPro', 'Noto Sans TC', 'Source Sans Pro', 'Microsoft JhengHei', '微軟正黑體', sans-serif;
       font-family: '微軟正黑體' \0; }
   .kv-formbox .form-content .privacyWrap {
-    width: 100%; }
+    width: 100%;
+    font-family: '微軟正黑體'; }
     .kv-formbox .form-content .privacyWrap a {
       color: #fff;
       text-decoration: underline; }
@@ -986,11 +990,13 @@ button {
       width: 100%;
       margin: 0 0 10px; }
       .kv-formbox .form-content .form-column input {
+        padding-left: 5%;
         font-size: 16px;
-        line-height: 35px; }
+        line-height: 50px; }
       .kv-formbox .form-content .form-column select {
+        padding-left: 5%;
         font-size: 16px;
-        line-height: 35px; }
+        line-height: 50px; }
     .kv-formbox .form-content .privacyWrap {
       font-size: 12px;
       font-family: KozGoProLight, '微軟正黑體';
@@ -1005,6 +1011,28 @@ button {
       left: 0;
       right: 0;
       bottom: -13px; }
+  .checkWrap [type='checkbox'] + label {
+    padding-left: 25px; }
+  .checkWrap [type='checkbox'].filled-in:not(:checked) + label:after {
+    width: 15px;
+    height: 15px;
+    top: 3px; }
+  .checkWrap [type='checkbox'].filled-in:checked + label:after {
+    top: 3px;
+    width: 15px;
+    height: 15px; }
+  .checkWrap [type='checkbox'].filled-in:checked + label:before {
+    top: 5px;
+    width: 6px;
+    height: 9px; } }
+
+@media screen and (max-width: 414px) {
+  .kv-formbox .form-content .form-column input {
+    line-height: 50px; }
+  .kv-formbox .form-content .form-column select {
+    line-height: 50px; }
+  .kv-formbox .form-content .privacyWrap label {
+    line-height: 1.25; }
   .checkWrap [type='checkbox'] + label {
     padding-left: 25px; }
   .checkWrap [type='checkbox'].filled-in:not(:checked) + label:after {
@@ -1084,8 +1112,10 @@ button {
       line-height: 1.8;
       display: inline-block;
       padding: 33px 0; }
-    .modal-body .vipModalWrap a img {
-      padding: 10px 0; }
+    .modal-body .vipModalWrap a {
+      text-decoration: none; }
+      .modal-body .vipModalWrap a img {
+        padding: 10px 0; }
 
 @media screen and (max-width: 640px) {
   .modal-body {
@@ -1101,8 +1131,8 @@ button {
 
 @media screen and (max-width: 375px) {
   .modal-body .vipModalWrap {
-    padding-left: 2rem;
-    padding-right: 2rem; } }
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; } }
 
 .starSection {
   background: url("../images/starBg-pc_w.jpg") no-repeat bottom center;
@@ -1407,7 +1437,7 @@ button {
         margin: 0 5% 0 0;
         padding: 100px 0 0; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .star02Section .starWrap .star02-content .item01 .star-text,
   .star02Section .starWrap .star02-content .item02 .star-text,
   .star02Section .starWrap .star02-content .item03 .star-text {
@@ -1482,6 +1512,10 @@ button {
               display: none; }
             .star02Section .starWrap .star02-content .item .star-text .star-mb {
               display: block; }
+        .star02Section .starWrap .star02-content .note p {
+          padding-top: 30px;
+          position: static;
+          z-index: 0; }
       .star02Section .starWrap .star-link {
         background: url("../images/star-linkBg.jpg") no-repeat center;
         background-size: 100%;
@@ -1490,7 +1524,7 @@ button {
         font-weight: bold;
         font-size: 18px;
         line-height: 1.25;
-        padding: 8px 0;
+        padding: 6px 0;
         max-width: 320px;
         margin: 0 auto;
         color: #0a153e;
@@ -1509,18 +1543,25 @@ button {
 
 @media screen and (max-width: 414px) {
   .star02Section .starWrap .star02-content .item01 .star-text {
-    padding-top: 40px; }
-  .star02Section .starWrap .star02-content .item02 .star-text,
+    margin: 0 10% 0 0;
+    padding-top: 80px; }
+  .star02Section .starWrap .star02-content .item02 .star-text {
+    padding-top: 100px; }
   .star02Section .starWrap .star02-content .item03 .star-text {
-    padding-top: 100px; } }
+    margin: 0 10% 0 0;
+    padding-top: 100px; }
+  .star02Section .starWrap .star02-content .star-link {
+    font-size: 16px; } }
 
 @media screen and (max-width: 375px) {
   .star02Section .starWrap .star02-content .item01 .star-text {
+    margin: 0 12% 0 0;
     padding-top: 30px;
     right: 0; }
   .star02Section .starWrap .star02-content .item02 .star-text {
     padding-top: 80px; }
   .star02Section .starWrap .star02-content .item03 .star-text {
+    margin: 0 12% 0 0;
     padding-top: 100px; }
   .star02Section .starWrap .star02-content .item {
     position: relative; }
@@ -1566,9 +1607,11 @@ button {
         display: none; }
       .star02Section .starWrap .star02-content .item .star-text .star-mb {
         display: block; }
+  .star02Section .starWrap .star02-content .item.note p {
+    padding-top: 20px; }
   .star02Section .starWrap .star-link {
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 1.1;
     max-width: 280px; } }
 
 .vipSection {
@@ -1842,20 +1885,20 @@ button {
   .vipSection .vipContainer .sec-title {
     padding: 120px 2.2rem 50px; } }
 
-.momSection {
-  background: url(../images/momBg-pc_w.jpg) no-repeat bottom center;
+.serviceSection {
+  background: url(../images/serviceBg-pc_w.jpg) no-repeat bottom center;
   padding-bottom: 87px; }
-  .momSection .momContainer .sec-title {
+  .serviceSection .serviceContainer .sec-title {
     padding: 46px 0 116px;
     max-width: 1024px;
     margin: 0 auto; }
-    .momSection .momContainer .sec-title .title-pc {
+    .serviceSection .serviceContainer .sec-title .title-pc {
       display: block; }
-    .momSection .momContainer .sec-title .title-mb {
+    .serviceSection .serviceContainer .sec-title .title-mb {
       display: none; }
-  .momSection .momContainer .serviceWrapper {
+  .serviceSection .serviceContainer .serviceWrapper {
     margin: 0 auto;
-    max-width: 610px;
+    max-width: 672px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1864,20 +1907,20 @@ button {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-    .momSection .momContainer .serviceWrapper div {
-      padding: 0 3% 55px; }
-      .momSection .momContainer .serviceWrapper div img {
+    .serviceSection .serviceContainer .serviceWrapper div {
+      padding: 0 5% 55px; }
+      .serviceSection .serviceContainer .serviceWrapper div img {
         padding-bottom: 23px; }
-      .momSection .momContainer .serviceWrapper div p {
+      .serviceSection .serviceContainer .serviceWrapper div p {
         color: #d0b685;
         font-family: 'Microsoft JhengHei', '微軟正黑體';
-        font-size: 22px;
+        font-size: 28px;
         text-align: center;
-        line-height: 1.5; }
-        .momSection .momContainer .serviceWrapper div p b {
+        line-height: 1.3; }
+        .serviceSection .serviceContainer .serviceWrapper div p b {
           font-weight: bold;
           display: block; }
-  .momSection .momContainer a {
+  .serviceSection .serviceContainer a {
     background: url("../images/star-linkBg.jpg") no-repeat center;
     background-size: 100%;
     max-width: 437px;
@@ -1890,7 +1933,7 @@ button {
     padding: 12px 0;
     color: #0a153e;
     display: block; }
-    .momSection .momContainer a:after {
+    .serviceSection .serviceContainer a:after {
       content: '';
       display: inline-block;
       width: 10px;
@@ -1898,34 +1941,34 @@ button {
       background: url("../images/star-linkArrow.png") no-repeat center;
       background-size: 100%;
       margin: 0 0 0 5px; }
-    .momSection .momContainer a:hover {
+    .serviceSection .serviceContainer a:hover {
       text-decoration: none;
       opacity: 0.8; }
 
 @media screen and (max-width: 640px) {
-  .momSection .momContainer .sec-title {
+  .serviceSection .serviceContainer .sec-title {
     margin: 0 auto;
     padding: 120px 1.2rem 50px; }
-    .momSection .momContainer .sec-title .title-pc {
+    .serviceSection .serviceContainer .sec-title .title-pc {
       display: none; }
-    .momSection .momContainer .sec-title .title-mb {
+    .serviceSection .serviceContainer .sec-title .title-mb {
       display: block; } }
 
 @media screen and (max-width: 414px) {
-  .momSection .momContainer .sec-title {
+  .serviceSection .serviceContainer .sec-title {
     padding: 120px 2rem 50px; }
-  .momSection .momContainer a {
+  .serviceSection .serviceContainer a {
     max-width: 320px; } }
 
 @media screen and (max-width: 375px) {
-  .momSection .momContainer .sec-title {
+  .serviceSection .serviceContainer .sec-title {
     padding: 120px 2.2rem 50px; }
-  .momSection .momContainer .serviceWrapper {
+  .serviceSection .serviceContainer .serviceWrapper {
     max-width: 300px; }
-    .momSection .momContainer .serviceWrapper div {
+    .serviceSection .serviceContainer .serviceWrapper div {
       padding: 0 3% 55px;
       width: 50%; }
-  .momSection .momContainer a {
+  .serviceSection .serviceContainer a {
     max-width: 300px; } }
 
 footer {

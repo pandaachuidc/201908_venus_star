@@ -46,7 +46,7 @@
         background-size: 100%;
         background-color: #050e2a;
         margin: 0 auto;
-        padding: 0 2.5rem 205px; //180px為背景下方調整
+        padding: 0 2.5rem 180px; //180px為背景下方調整
         position: relative;
         z-index: 1;
         .kv-formwrap {
@@ -110,7 +110,7 @@
             }
         }
         .kv-form {
-            background: url('../images/kvbg-pc.jpg') no-repeat top center #0c153f;
+            background: url('../images/kvbg-pc.jpg') no-repeat top center;
             background-size: 100%;
         }
     }
@@ -173,7 +173,7 @@
     }
 }
 // mobile layout
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .kvSection {
         .kv {
             .kv-cta {
@@ -197,7 +197,8 @@
             }
         }
         .kv-form {
-            background: url('../images/kvbg-mb.jpg') no-repeat top center #0c153f;
+            background: url('../images/kvbg-mb.jpg') no-repeat top center;
+            background-color: #051439;
             background-size: 100%;
             margin: 0 auto;
             padding: 0 1.2rem 50px;
@@ -287,6 +288,7 @@
         color: #fff;
         margin: 0 0 25px;
         .needsWrap {
+            font-family: '微軟正黑體';
             width: 100%;
             text-align: center;
             margin: 0 0 20px;
@@ -296,6 +298,7 @@
             }
         }
         .form-column {
+            font-family: '微軟正黑體';
             width: 48%;
             margin: 0 0 20px;
             input {
@@ -303,15 +306,15 @@
                 border: 0;
                 border-radius: 0;
                 border-bottom: 1px solid rgba(214, 197, 255, 0.5);
-                background: #fff;
-                color: #666;
+                background: #111845;
+                color: #fff;
                 width: 100%;
                 font-size: 18px;
                 letter-spacing: 0.05em;
                 line-height: 40px;
                 padding: 0 10px;
                 &::placeholder {
-                    color: #666;
+                    color: #fff;
                 }
                 &:hover {
                     border-bottom: 1px solid rgba(214, 197, 255, 1);
@@ -325,16 +328,16 @@
                 border: 0;
                 border-radius: 0;
                 border-bottom: 1px solid rgba(214, 197, 255, 0.5);
-                background: url('../images/arrow.png') no-repeat right 15px center #fff;
+                background: url('../images/arrow.png') no-repeat right 15px center #111845;
                 background-size: 10px;
-                color: #666;
+                color: #fff;
                 width: 100%;
                 font-size: 18px;
                 letter-spacing: 0.05em;
                 line-height: 40px;
                 padding: 0 10px;
                 &::placeholder {
-                    color: #666;
+                    color: #fff;
                 }
                 &:hover {
                     border-bottom: 1px solid rgba(214, 197, 255, 1);
@@ -352,6 +355,7 @@
         }
         .privacyWrap {
             width: 100%;
+            font-family: '微軟正黑體';
             a {
                 color: #fff;
                 text-decoration: underline;
@@ -528,12 +532,14 @@
                 width: 100%;
                 margin: 0 0 10px;
                 input {
+                    padding-left: 5%;
                     font-size: 16px;
-                    line-height: 35px;
+                    line-height: 50px;
                 }
                 select {
+                    padding-left: 5%;
                     font-size: 16px;
-                    line-height: 35px;
+                    line-height: 50px;
                 }
             }
             .privacyWrap {
@@ -553,6 +559,50 @@
                     left: 0;
                     right: 0;
                     bottom: -13px;
+                }
+            }
+        }
+    }
+    .checkWrap {
+        [type='checkbox'] + label {
+            padding-left: 25px;
+        }
+        [type='checkbox'].filled-in:not(:checked) + label:after {
+            width: 15px;
+            height: 15px;
+            top: 3px;
+        }
+        [type='checkbox'].filled-in:checked + label:after {
+            top: 3px;
+            width: 15px;
+            height: 15px;
+        }
+        [type='checkbox'].filled-in:checked + label:before {
+            top: 5px;
+            width: 6px;
+            height: 9px;
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .kv-formbox {
+        .form-content {
+            .needsWrap {
+                .checkWrap {
+                }
+            }
+            .form-column {
+                input {
+                    line-height: 50px;
+                }
+                select {
+                    line-height: 50px;
+                }
+            }
+            .privacyWrap {
+                label {
+                    line-height: 1.25;
                 }
             }
         }
@@ -649,8 +699,11 @@
             display: inline-block; //解決padding-top失效
             padding: 33px 0;
         }
-        a img {
-            padding: 10px 0;
+        a {
+            text-decoration: none;
+            img {
+                padding: 10px 0;
+            }
         }
     }
 }
@@ -668,7 +721,7 @@
 @media screen and (max-width: 414px) {
     .modal-body {
         .vipModalWrap {
-            padding: 50px 2.8rem ;
+            padding: 50px 2.8rem;
         }
     }
 }
@@ -676,8 +729,8 @@
 @media screen and (max-width: 375px) {
     .modal-body {
         .vipModalWrap {
-            padding-left: 2rem;
-            padding-right: 2rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
         }
     }
 }

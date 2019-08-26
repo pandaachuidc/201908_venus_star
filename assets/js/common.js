@@ -6,7 +6,7 @@ $(function() {
     AOS.init({
         offset: 200,
         easing: 'ease-in-sine',
-        duration: 700,
+        duration: 1000,
     });
     // 主選單
     $('.navigation_trigger').on('click', function() {
@@ -39,7 +39,7 @@ $(function() {
         $('body').removeClass('fixed');
     });
 
-    // vip slider2
+    // vip slider
     $('.owl-carousel').owlCarousel({
         items: 5,
         loop: true,

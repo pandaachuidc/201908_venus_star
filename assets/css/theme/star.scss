@@ -350,7 +350,6 @@
         .starWrap {
             max-width: 1024px;
             min-height: auto;
-            // padding-bottom: 48px;
             .star02-content {
                 .item {
                     .star-text {
@@ -409,8 +408,8 @@
     }
 }
 
-// view 767
-@media screen and (max-width: 767px) {
+// view 768
+@media screen and (max-width: 768px) {
     .star02Section {
         .starWrap {
             .star02-content {
@@ -521,6 +520,13 @@
                         }
                     }
                 }
+                .note {
+                    p {
+                        padding-top: 30px;
+                        position: static;
+                        z-index: 0;
+                    }
+                }
             }
 
             .star-link {
@@ -531,7 +537,7 @@
                 font-weight: bold;
                 font-size: 18px;
                 line-height: 1.25;
-                padding: 8px 0;
+                padding: 6px 0;
                 max-width: 320px;
                 margin: 0 auto;
                 color: #0a153e;
@@ -561,14 +567,23 @@
             .star02-content {
                 .item01 {
                     .star-text {
-                        padding-top: 40px;
+                        margin: 0 10% 0 0;
+                        padding-top: 80px;
                     }
                 }
-                .item02,
-                .item03 {
+                .item02 {
                     .star-text {
                         padding-top: 100px;
                     }
+                }
+                .item03 {
+                    .star-text {
+                        margin: 0 10% 0 0;
+                        padding-top: 100px;
+                    }
+                }
+                .star-link {
+                    font-size: 16px;
                 }
             }
         }
@@ -580,9 +595,8 @@
         .starWrap {
             .star02-content {
                 .item01 {
-                    .star-pic {
-                    }
                     .star-text {
+                        margin: 0 12% 0 0;
                         padding-top: 30px;
                         right: 0;
                     }
@@ -594,6 +608,7 @@
                 }
                 .item03 {
                     .star-text {
+                        margin: 0 12% 0 0;
                         padding-top: 100px;
                     }
                 }
@@ -655,11 +670,16 @@
                         }
                     }
                 }
+                .item.note {
+                    p {
+                        padding-top: 20px;
+                    }
+                }
             }
 
             .star-link {
-                font-size: 16px;
-                line-height: 16px;
+                font-size: 15px;
+                line-height: 1.1;
                 max-width: 280px;
             }
         }
