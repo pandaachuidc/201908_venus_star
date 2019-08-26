@@ -43,7 +43,7 @@ $(function() {
     $('.owl-carousel').owlCarousel({
         items: 5,
         loop: true,
-        margin: 0,
+        margin: 80,
         center: true,
         autoplayHoverPause: false,
         autoplay: true,

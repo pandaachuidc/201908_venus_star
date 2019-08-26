@@ -19,7 +19,7 @@
             .item {
                 a {
                     text-decoration: none;
-                    width: 85%;
+                    // width: 85%;
                     margin: 0 auto;
                     cursor: pointer;
                     .vip-img {
@@ -109,104 +109,6 @@
         }
     }
 }
-/*
-.vip-item img {
-    width: 85%;
-    margin: 50px 0;
-}
-
-.vip-item .owl-item {
-    -webkit-transform: scale(0.7);
-    -webkit-transition: 500ms;
-    transition: 500ms;
-    .vip-text {
-        //display: none; //文字只有中間會顯示<--空間消失，上面的圖片往下掉，造成動畫不流暢
-        opacity: 0; //文字只有中間會顯示
-        -webkit-transform: scale(0.7);
-        -webkit-transition: 500ms;
-        transition: 500ms;
-    }
-}
-
-.vip-item .center {
-    -webkit-transform: scale(1);
-    -webkit-transition: 500ms;
-    transition: 500ms;
-    .vip-text {
-        //display: block !important; //文字只有中間會顯示
-        opacity: 1;
-        -webkit-transform: scale(1);
-        -webkit-transition: 500ms;
-        transition: 500ms;
-    }
-}
-
-.vip-item .owl-nav {
-    margin: -140px 10% 0;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-
-.vip-item .owl-dots {
-    display: none;
-}
-
-.vip-item img {
-    -webkit-transition: 500ms;
-    transition: 500ms;
-    &:hover {
-        -webkit-transition: 500ms;
-        transition: 500ms;
-        -webkit-transform: scale(0.95);
-    }
-}
-
-.vip-item {
-    .item {
-        margin: 0 auto;
-        cursor: pointer;
-        a {
-            text-decoration: none;
-
-            .vip-img {
-                img {
-                    @include box-shadow;
-                }
-            }
-            .vip-text {
-                .name {
-                    color: #c3ab7f;
-                    font-size: 30px;
-                    padding: 47px 0 27px 0;
-                }
-                .contentWrapper {
-                    font-size: 20px;
-                    border-left: #ffffff 1px solid;
-                    padding-left: 20px;
-                    p {
-                        display: block;
-                        width: 100%;
-                        color: #ffffff;
-                        line-height: 30px;
-                        margin-bottom: 20px;
-                        // 收起文字
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 2;
-                        -webkit-box-orient: vertical;
-                    }
-                    span {
-                        color: #c3ab7f;
-                        font-family: Futura;
-                    }
-                }
-            }
-        }
-    }
-}
-*/
 
 @media screen and (max-width: 1024px) {
     .vipSection {
@@ -290,10 +192,9 @@
             .owl-carousel {
                 .item {
                     margin: 0 auto;
-                    width: 100%;
+                    width: 80%;
                     padding-left: 10%;
                     padding-right: 10%;
-                    // padding-bottom: 40px;
                     a {
                         .vip-img {
                             img {
@@ -347,33 +248,33 @@
             .sec-title {
                 padding: $sec-title-padding-414;
             }
+            .owl-carousel {
+                .item {
+                    padding-bottom: 40px;
+                    a {
+                        .vip-img {
+                            img {
+                                margin: 0 0 10px 0;
+                            }
+                        }
+                        .vip-text {
+                            .name {
+                                font-size: 22px;
+                                padding: 20px 0 17px 0;
+                            }
+                            .contentWrapper {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
         }
-    }
-    .vip-item img {
-        margin: 25px 0;
     }
 
     .vip-item .owl-nav {
         margin: -320px auto 0;
         max-width: 500px;
-    }
-
-    .vip-item {
-        .item {
-            // width: 60%;
-            padding-bottom: 60px;
-            a {
-                .vip-text {
-                    .name {
-                        font-size: 25px;
-                        padding: 0 0 27px 0;
-                    }
-                    .contentWrapper {
-                        font-size: 18px;
-                    }
-                }
-            }
-        }
     }
 }
 
