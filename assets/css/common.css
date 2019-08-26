@@ -725,7 +725,7 @@ button {
 
 @media screen and (max-width: 375px) {
   .kvSection .kv-form .kv-gift .kv-giftbox .giftbox_title {
-    font-size: 17.5px; } }
+    font-size: 17px; } }
 
 .kv-formbox .form-content {
   background: rgba(255, 255, 255, 0.1);

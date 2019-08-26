@@ -6,7 +6,7 @@ $(function() {
     AOS.init({
         offset: 200,
         easing: 'ease-in-sine',
-        duration: 1000,
+        duration: 1200,
     });
     // 主選單
     $('.navigation_trigger').on('click', function() {
@@ -48,7 +48,7 @@ $(function() {
         autoplayHoverPause: false,
         autoplay: true,
         autoplaySpeed: 500,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 3500,
         responsive: {
             360: {
                 items: 1,
