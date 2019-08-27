@@ -597,7 +597,7 @@
                 .item01 {
                     .star-text {
                         margin: 0 12% 0 0;
-                        padding-top: 30px;
+                        padding-top: 70px;
                         right: 0;
                     }
                 }
@@ -681,6 +681,30 @@
                 font-size: 15px;
                 line-height: 1.1;
                 max-width: 280px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .star02Section {
+        .starWrap {
+            .star02-content {
+                .item {
+                    .star-text {
+                        color: #fff;
+                        max-width: 350px;
+                        padding-bottom: 30px;
+                        position: absolute;
+
+                        .name {
+                            font-size: 18px;
+                        }
+                        p {
+                            font-size: 13px;
+                        }
+                    }
+                }
             }
         }
     }

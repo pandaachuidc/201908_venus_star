@@ -1563,7 +1563,7 @@ button {
 @media screen and (max-width: 375px) {
   .star02Section .starWrap .star02-content .item01 .star-text {
     margin: 0 12% 0 0;
-    padding-top: 30px;
+    padding-top: 70px;
     right: 0; }
   .star02Section .starWrap .star02-content .item02 .star-text {
     padding-top: 80px; }
@@ -1620,6 +1620,17 @@ button {
     font-size: 15px;
     line-height: 1.1;
     max-width: 280px; } }
+
+@media screen and (max-width: 375px) {
+  .star02Section .starWrap .star02-content .item .star-text {
+    color: #fff;
+    max-width: 350px;
+    padding-bottom: 30px;
+    position: absolute; }
+    .star02Section .starWrap .star02-content .item .star-text .name {
+      font-size: 18px; }
+    .star02Section .starWrap .star02-content .item .star-text p {
+      font-size: 13px; } }
 
 .vipSection {
   background: url("../images/vipBg-pc_w.jpg") no-repeat top center;
@@ -1791,7 +1802,7 @@ button {
 
 @media screen and (max-width: 375px) {
   .vipSection .vipContainer .sec-title {
-    padding: 120px 2.2rem 50px; } }
+    padding: 120px 2rem 40px; } }
 
 .serviceSection {
   background: url(../images/serviceBg-pc_w.jpg) no-repeat bottom center;
