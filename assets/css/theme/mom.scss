@@ -94,6 +94,19 @@
             }
             a {
                 max-width: 320px;
+                margin-top: 20px;
+            }
+            .serviceWrapper {
+                div {
+                    padding: 2%;
+                    width: 28%;
+                    p {
+                        font-size: 20px;
+                    }
+                    img {
+                        padding-bottom: 15px;
+                    }
+                }
             }
         }
     }
@@ -104,16 +117,6 @@
         .serviceContainer {
             .sec-title {
                 padding: $sec-title-padding-375;
-            }
-            .serviceWrapper {
-                max-width: 300px;
-                div {
-                    padding: 0 3% 55px;
-                    width: 50%;
-                }
-            }
-            a {
-                max-width: 300px;
             }
         }
     }

@@ -5,17 +5,18 @@ footer {
         max-width: 1360px;
         margin: 0 auto;
         padding: 50px 1.2rem 30px;
-        font-family:  "Noto Sans TC", "Source Sans Pro", "Microsoft JhengHei", "微軟正黑體", sans-serif;
-        font-family: "微軟正黑體"\0; //for ie
+        font-family: 'Noto Sans TC', 'Source Sans Pro', 'Microsoft JhengHei', '微軟正黑體',
+            sans-serif;
+        font-family: '微軟正黑體' \0; //for ie
         .footer-title {
             font-size: 20px;
-            letter-spacing: .1em;
+            letter-spacing: 0.1em;
             color: #c0a36b;
             margin: 0 0 25px;
         }
         .shop {
             font-size: 16px;
-            letter-spacing: .05em;
+            letter-spacing: 0.05em;
             span {
                 display: inline-block;
                 padding: 0 7px 0 0;
@@ -25,7 +26,7 @@ footer {
         }
         .topSection {
             padding: 0 0 30px;
-            border-bottom: 1px solid rgba(192,163,107,0.2);
+            border-bottom: 1px solid rgba(192, 163, 107, 0.2);
             display: flex;
             flex-direction: row-reverse;
             align-items: flex-end;
@@ -41,12 +42,12 @@ footer {
                     width: 78%;
                     color: #c0a36b;
                     font-size: 20px;
-                    letter-spacing: .1em;
+                    letter-spacing: 0.1em;
                     a {
                         color: #c0a36b;
                         font-size: 24px;
                         text-decoration: none;
-                        font-family: "Futura", "微軟正黑體";
+                        font-family: 'Futura', '微軟正黑體';
                         margin: 0 0 0 20px;
                     }
                 }
@@ -83,10 +84,10 @@ footer {
         text-align: center;
         background: #0c1939;
         font-size: 14px;
-        letter-spacing: .05em;
+        letter-spacing: 0.05em;
         padding: 10px;
         color: #605b7d;
-        font-family: "FuturaLight", "微軟正黑體";
+        font-family: 'FuturaLight', '微軟正黑體';
     }
 }
 @media screen and (max-width: 1000px) {
@@ -132,7 +133,7 @@ footer {
 @media screen and (max-width: 640px) {
     footer {
         .footer-container {
-            padding: 30px 1.2rem;
+            padding: 30px 1rem;
             .footer-title {
                 font-size: 16px;
                 margin: 0 0 15px;
